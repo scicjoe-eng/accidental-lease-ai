@@ -1,0 +1,102 @@
+{
+  "stateSlug": "washington",
+  "stateName": "Washington",
+  "year": 2026,
+  "titleTag": "Washington Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Washington landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Washington Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Washington security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: No statutory limit",
+        "Return deadline: 30 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: Varies — confirm current statute.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Not required"
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Washington eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: commonly 3 days (verify by tenancy type/notice form).",
+        "Nonpayment notice type: (a) Nonpayment of rent – notice per RCW 59.12.030 (14-day Pay or Vacate);",
+        "Lease violation notice: commonly 10 days (may allow cure).",
+        "Lease violation notice type: (n) Four or more lease violations in 12 months (each previously cured) – at least 60 days;",
+        "Cure allowed: varies",
+        "Month-to-month termination: commonly 20 days (verify tenancy type).",
+        "Holdover/termination notice type: Varies — confirm termination/holdover notice rules.",
+        "Court process: varies — confirm court process requirements and exceptions.",
+        "Self-help eviction: varies — confirm current statute and case law.",
+        "Timeline: ",
+        "Court steps: RCW 59.18.650. JUST CAUSE EVICTION (Enacted 2021, amended 2022, 2023)."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Washington landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: (c) To inspect the premises, make necessary or agreed repairs, alterations or improvements, supply agreed services, or exhibit the dwelling unit to prospective tenants, purchasers, mortgagees, workmen, contractors, or real estate agents: providing that the landlord shall give the tenant at least 2 DAYS' prior notice of the landlord's intent to enter and entry shall occur only at reasonable times during normal business hours, unless the tenant otherwise agrees; (c) To inspect the premises, make necessary or agreed repairs, alterations or improvements, supply agreed services, or exhibit the dwelling unit to prospective tenants, purchasers, mortgagees, workmen, contractors, or real estate agents: providing that the landlord shall give the tenant at least 2 DAYS' prior notice of the landlord's intent to enter and entry shall occur only at reasonable times during normal business hours, unless the tenant otherwise agrees;",
+        "Timing: (c) To inspect the premises, make necessary or agreed repairs, alterations or improvements, supply agreed services, or exhibit the dwelling unit to prospective tenants, purchasers, mortgagees, workmen, contractors, or real estate agents: providing that the landlord shall give the tenant at least 2 DAYS' prior notice of the landlord's intent to enter and entry shall occur only at reasonable times during normal business hours, unless the tenant otherwise agrees;",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: tenant cannot unreasonably withhold consent",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Washington rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: typically none, but local/covered-housing rules may apply.",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: commonly 60 days' written notice for month-to-month tenancies.",
+        "Fixed-term leases: Varies — confirm your lease terms and statute.",
+        "Month-to-month: Varies — generally allowed with proper notice.",
+        "Delivery: Varies — confirm written notice and delivery method requirements.",
+        "Just cause: varies",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Washington landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: implied warranty generally applies",
+        "Landlord repair duty: (1) Comply with applicable building, housing, and health codes, especially when conditions endanger or impair the health or safety of the tenant;",
+        "Tenant notice: Repair timelines (RCW 59.18.070): After tenant's written notice of deficiency:",
+        "Repair-and-deduct: varies",
+        "Rent withholding: varies",
+        "Termination: Varies — some states allow termination after notice and failure to repair.",
+        "Retaliation: varies",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}

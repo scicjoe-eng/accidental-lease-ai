@@ -1,0 +1,102 @@
+{
+  "stateSlug": "wisconsin",
+  "stateName": "Wisconsin",
+  "year": 2026,
+  "titleTag": "Wisconsin Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Wisconsin landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Wisconsin Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Wisconsin security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: NO STATUTORY LIMIT",
+        "Return deadline: 21 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: - Permissible deductions: Unpaid rent, damage beyond normal wear and tear, amounts owed under the lease.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Varies — confirm current statute."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Wisconsin eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: commonly 5 days (verify by tenancy type/notice form).",
+        "Nonpayment notice type: - Nonpayment of rent notice: 5 days written notice (with opportunity to cure for first violation in a rental period).",
+        "Lease violation notice: commonly 5 days (may allow cure).",
+        "Lease violation notice type: - Lease violation notice: 14 days written notice with 14-day right to cure.",
+        "Cure allowed: varies",
+        "Month-to-month termination: commonly 5 days (verify tenancy type).",
+        "Holdover/termination notice type: - Month-to-month termination: 28 days written notice required.",
+        "Court process: judicial eviction required (no self-help).",
+        "Self-help eviction: prohibited (generally requires a court order).",
+        "Timeline: - Timeline: Uncontested eviction takes approximately 3-6 weeks from filing to judgment.",
+        "Court steps: - Court process: Landlord files in circuit court; tenant is served with summons and complaint; tenant has right to appear and defend."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Wisconsin landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: - Entry for repairs: Landlord may enter to make repairs, inspections, or to show the premises. - Entry for repairs: Landlord may enter to make repairs, inspections, or to show the premises.",
+        "Timing: - Reasonable times: Entry should be during normal business hours or reasonable hours.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: varies",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Wisconsin rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: typically none, but local/covered-housing rules may apply.",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: varies — confirm current statute and any local ordinances.",
+        "Fixed-term leases: - Fixed-term leases: Rent cannot be increased during the lease term unless the lease specifically allows it.",
+        "Month-to-month: - Rent increases: No statutory limit on amount or frequency for month-to-month tenancies.",
+        "Delivery: - Notice required: For month-to-month tenancies, at least 28 days advance written notice of a rent increase.",
+        "Just cause: not required",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Wisconsin landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: implied warranty generally applies",
+        "Landlord repair duty: - Landlord's duty: To keep premises in a fit and habitable condition, comply with applicable building and housing codes, make repairs, keep common areas clean and safe, maintain essential services.",
+        "Tenant notice: Varies — confirm required notice/cure steps before remedies.",
+        "Repair-and-deduct: may be allowed under conditions",
+        "Rent withholding: not allowed / very limited",
+        "Termination: Varies — some states allow termination after notice and failure to repair.",
+        "Retaliation: retaliation is prohibited",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}

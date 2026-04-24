@@ -1,0 +1,102 @@
+{
+  "stateSlug": "tennessee",
+  "stateName": "Tennessee",
+  "year": 2026,
+  "titleTag": "Tennessee Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Tennessee landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Tennessee Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Tennessee security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: no statutory cap",
+        "Return deadline: varies — confirm current statute and local rules.",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: Varies — confirm current statute.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Varies — confirm current statute."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Tennessee eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: varies — confirm current statute and required notice form.",
+        "Nonpayment notice type: Varies — confirm required notice form (pay-or-quit, demand for possession, etc.).",
+        "Lease violation notice: varies — confirm cure rights and timelines.",
+        "Lease violation notice type: Varies — confirm notice type and cure rules.",
+        "Cure allowed: varies",
+        "Month-to-month termination: varies by tenancy type and local rules.",
+        "Holdover/termination notice type: Varies — confirm termination/holdover notice rules.",
+        "Court process: confirm whether judicial eviction is required (most states prohibit self-help).",
+        "Self-help eviction: varies — confirm current statute and case law.",
+        "Timeline: ",
+        "Court steps: {\"statutes\":\"T.C.A. §§ 66-28-501, 66-28-502, 66-28-505, 66-28-507, 66-28-509\",\"notice_requirements\":{\"nonpayment_of_rent\":\"14-day notice to pay or vacate (T.C.A. § 66-28-505)\",\"holdover_tenant\":\"30-day notice to terminate for month-to-month tenancy\",\"lease_violation\":\"30-day notice to cure or quit for noncompliance (T.C.A. § 66-28-507)\",\"no_cause\":\"30-day notice for at-will tenancy (T.C.A. § 66-28-501)\",\"unlawful_detainer\":\"Notice and court action required under T.C.A. § 29-18-101 et seq.\"},\"full_text\":\"T.C.A. § 66-28-505. Failure to pay rent. (a) If rent is due and unpaid, the landlord may give written notice to the tenant requiring the tenant to pay rent or vacate the premises within fourteen (14) days after the delivery of the notice to the tenant. (b) The notice shall specify that the tenant has fourteen (14) days to pay rent or vacate. If the tenant fails to pay rent or vacate within the fourteen-day period, the landlord may bring an action for possession and rent.\\nT.C.A. § 66-28-507. Noncompliance. (a) If the tenant materially fails to comply with the rental agreement or fails to fulfill the tenant's obligations under § 66-28-401, the landlord may give written notice specifying the tenant's acts or omissions and stating that the rental agreement will terminate upon a date not less than thirty (30) days after receipt of the notice. (b) If the failure is remediable and the tenant adequately remedies the breach within thirty (30) days after receipt of the notice, the rental agreement does not terminate. (c) If the breach is not remediable by repair or the payment of damages, the landlord may give written notice specifying the breach and stating that the rental agreement will terminate upon a date not less than fourteen (14) days after receipt of the notice.\"}"
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Tennessee landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: Varies — commonly inspections, repairs, services, and showing the unit.",
+        "Timing: Varies — usually at reasonable times.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: tenant cannot unreasonably withhold consent",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Tennessee rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: typically none, but local/covered-housing rules may apply.",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: varies — confirm current statute and any local ordinances.",
+        "Fixed-term leases: Varies — confirm your lease terms and statute.",
+        "Month-to-month: Varies — generally allowed with proper notice.",
+        "Delivery: Varies — confirm written notice and delivery method requirements.",
+        "Just cause: varies",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Tennessee landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: confirm whether an implied warranty applies",
+        "Landlord repair duty: Varies — confirm landlord repair/habitability duties in statute and local code.",
+        "Tenant notice: Varies — confirm required notice/cure steps before remedies.",
+        "Repair-and-deduct: varies",
+        "Rent withholding: not allowed / very limited",
+        "Termination: Varies — some states allow termination after notice and failure to repair.",
+        "Retaliation: varies",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}

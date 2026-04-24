@@ -1,0 +1,102 @@
+{
+  "stateSlug": "oregon",
+  "stateName": "Oregon",
+  "year": 2026,
+  "titleTag": "Oregon Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Oregon landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Oregon Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Oregon security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: may not exceed 5",
+        "Return deadline: 31 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: Varies — confirm current statute.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Varies — confirm current statute."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Oregon eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: commonly 90 days (verify by tenancy type/notice form).",
+        "Nonpayment notice type: Varies — confirm required notice form (pay-or-quit, demand for possession, etc.).",
+        "Lease violation notice: varies — confirm cure rights and timelines.",
+        "Lease violation notice type: Varies — confirm notice type and cure rules.",
+        "Cure allowed: varies",
+        "Month-to-month termination: commonly 30 days (verify tenancy type).",
+        "Holdover/termination notice type: Varies — confirm termination/holdover notice rules.",
+        "Court process: confirm whether judicial eviction is required (most states prohibit self-help).",
+        "Self-help eviction: prohibited (generally requires a court order).",
+        "Timeline: ",
+        "Court steps: {\"statutes\":\"ORS §§ 90.392, 90.394, 90.398, 90.427, 90.445\",\"notice_requirements\":{\"nonpayment_of_rent\":\"4-day notice to pay or vacate for nonpayment (ORS 90.394, extended to 10 days by SR 890 effective 2025)\",\"no_cause_termination\":\"30-day notice (90.427) for month-to-month; 90-day notice if tenant has lived there 1+ year\",\"cause_termination\":\"14-day notice to cure or vacate for noncompliance (ORS 90.392)\",\"immediate_termination\":\"24 hours notice for drug/alcohol violations, violent/criminal activity (ORS 90.396, 90.398)\",\"retaliation_prohibited\":\"ORS 90.385\"},\"full_text\":\"ORS 90.427 No cause termination; notice; reasons prohibited. (1)(a) A landlord shall not terminate a tenancy without cause. The landlord must provide a written notice specifying the reason for termination. (b) If no specific cause exists, the landlord must provide a termination notice of at least 30 days for month-to-month tenancy. If the tenant has resided in the dwelling unit for one year or more, the landlord must provide at least 90 days' notice.\\n(2) A landlord may not terminate or refuse to renew a tenancy because: (a) The tenant has exercised any right or remedy under this chapter or other law; (b) The tenant has made a complaint to a governmental entity; or (c) The landlord's desire to convert the dwelling unit to another use, unless the landlord pays relocation assistance equal to one month's rent.\\nORS 90.392 Termination for cause. If a tenant materially breaches the rental agreement or fails to comply with the obligations of tenancy, the landlord may terminate the rental agreement by giving not less than 14 days' written notice specifying the breach and stating that the rental agreement will terminate if the breach is not cured within 14 days. If the breach is not cured within the 14 days, the rental agreement terminates.\\nORS 90.394 Termination for nonpayment of rent. If the tenant fails to pay rent when due, the landlord may give the tenant a notice that the tenant has 4 days (extended to 10 days under SR 890 effective 2025) to pay the rent or vacate. If the tenant does not pay within the notice period, the landlord may proceed with termination.\"}"
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Oregon landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: Varies — commonly inspections, repairs, services, and showing the unit.",
+        "Timing: Varies — usually at reasonable times.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: varies",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Oregon rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: typically none, but local/covered-housing rules may apply.",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: commonly 30 days' written notice for month-to-month tenancies.",
+        "Fixed-term leases: Varies — confirm your lease terms and statute.",
+        "Month-to-month: Varies — generally allowed with proper notice.",
+        "Delivery: Varies — confirm written notice and delivery method requirements.",
+        "Just cause: varies",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Oregon landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: confirm whether an implied warranty applies",
+        "Landlord repair duty: Varies — confirm landlord repair/habitability duties in statute and local code.",
+        "Tenant notice: Varies — confirm required notice/cure steps before remedies.",
+        "Repair-and-deduct: varies",
+        "Rent withholding: varies",
+        "Termination: Varies — some states allow termination after notice and failure to repair.",
+        "Retaliation: varies",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}

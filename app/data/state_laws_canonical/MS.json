@@ -1,0 +1,663 @@
+{
+  "state_code": "MS",
+  "state_name": "Mississippi",
+  "state_slug": "mississippi",
+  "last_verified_at": "2026-04-21",
+  "verified_by": "verify-and-fill-habitability-details",
+  "facts": {
+    "security_deposit": {
+      "cap_rule": "NO STATUTORY LIMIT",
+      "return_deadline_days": 45,
+      "interest_rule": "Varies — confirm current statute.",
+      "itemized_statement_required": true,
+      "itemized_statement_deadline_days": "varies",
+      "allowed_deductions_rule": "- Permissible deductions: Unpaid rent, damage beyond normal wear and tear, other amounts owed under the lease.",
+      "deposit_receipt_required": "varies",
+      "move_in_checklist_required": "varies",
+      "penalty_for_bad_faith_rule": "- Penalty: If landlord fails to return deposit within 45 days without legitimate deductions, tenant may recover actual damages, costs, and attorney's fees.",
+      "prepaid_rent_treatment_rule": "Varies — confirm current statute.",
+      "nonrefundable_fee_rule": "Varies — confirm current statute.",
+      "holding_deposit_rule": "Varies — confirm current statute.",
+      "deposit_storage_segregation_rule": "- Separate account: Landlord is required to hold security deposit in a separate account in a Mississippi banking institution, or post a surety bond.",
+      "deposit_transfer_on_sale_rule": "Varies — confirm current statute.",
+      "special_rules_local_overrides_note": "Local ordinances and special housing programs can add stricter rules.",
+      "notes": []
+    },
+    "eviction": {
+      "nonpayment_notice_days": 3,
+      "lease_violation_notice_days": 3,
+      "month_to_month_notice_days": 3,
+      "judicial_process_required": true,
+      "self_help_eviction_prohibited": true,
+      "nonpayment_notice_type": "- Nonpayment of rent: 3 days written notice to quit. If tenant pays overdue rent plus any costs before judgment, tenancy may be reinstated.",
+      "lease_violation_notice_type": "- Lease violation: Generally handled per lease terms; courts enforce lease provisions.",
+      "lease_violation_cure_allowed": "varies",
+      "holdover_notice_type": "- Month-to-month termination: 30 days written notice required.",
+      "timeline_estimate_rule": "- Timeline: Uncontested cases approximately 1-4 weeks.",
+      "court_process_summary_rule": "- Court process: Landlord files in justice court (for amounts typically up to $3,500) or county court; tenant served; hearing within days.",
+      "filing_court_rule": "- Court process: Landlord files in justice court (for amounts typically up to $3,500) or county court; tenant served; hearing within days.",
+      "service_of_process_rule": "- Court process: Landlord files in justice court (for amounts typically up to $3,500) or county court; tenant served; hearing within days."
+    },
+    "landlord_entry": {
+      "notice_rule": "reasonable",
+      "typical_notice_hours": null,
+      "advance_notice_required": true,
+      "emergency_entry_allowed": true,
+      "allowed_entry_reasons_rule": "- Entry for repairs: Landlord may enter to make repairs, deliver items, or inspect the premises. - Entry to show: Landlord may enter to show premises to prospective tenants, buyers, or lenders.",
+      "entry_time_window_rule": "- Entry times: Entry should be at reasonable times.",
+      "tenant_can_refuse_unreasonable_entry": true,
+      "penalty_for_illegal_entry_rule": "Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+    },
+    "rent_increase": {
+      "notice_days": null,
+      "cap_rule": "Statewide rent control applies (coverage varies).",
+      "statewide_rent_control": true,
+      "local_rent_control_allowed": true,
+      "fixed_term_increase_allowed_rule": "- Fixed-term leases: Rent cannot be increased during the lease term.",
+      "month_to_month_increase_allowed_rule": "- Rent increases: No statutory limit on amount or frequency for month-to-month tenancies.",
+      "just_cause_required_for_increase": false,
+      "delivery_method_rule": "- Notice required: For month-to-month tenancies, at least 30 days advance written notice.",
+      "retaliation_protection_note": "Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+    },
+    "habitability": {
+      "implied_warranty_of_habitability": true,
+      "landlord_repair_duty_rule": "- Landlord's duty: Comply with applicable building and housing codes; make repairs to keep premises in good condition; maintain structural, plumbing, heating, electrical systems; provide running water and hot water.",
+      "tenant_notice_required_rule": "- Tenant's remedies:",
+      "repair_and_deduct_allowed": false,
+      "rent_withholding_allowed": false,
+      "tenant_termination_for_unrepaired_conditions_rule": "3. Termination: Tenant may terminate the rental agreement if conditions substantially impair health or safety and landlord fails to repair after notice.",
+      "retaliation_prohibited": false,
+      "code_enforcement_contact_rule": "Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+    }
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "Bootstrapped from app/data/state_laws.json",
+      "url": "app/data/state_laws.json"
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Maximum amount: NO STATUTORY LIMIT. Landlords may charge any amount as security deposit."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Return deadline: 45 days after tenancy ends."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.return_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Interest: No interest required to be paid to tenant on security deposits."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.interest_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Itemization required: Yes. Landlord must provide a written, itemized list of deductions."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Return deadline: 45 days after tenancy ends."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Permissible deductions: Unpaid rent, damage beyond normal wear and tear, other amounts owed under the lease."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.allowed_deductions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "Miss. Code Ann. § 89-8-21"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_receipt_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "Miss. Code Ann. § 89-8-21"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.move_in_checklist_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Penalty: If landlord fails to return deposit within 45 days without legitimate deductions, tenant may recover actual damages, costs, and attorney's fees."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.penalty_for_bad_faith_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "Miss. Code Ann. § 89-8-21"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.prepaid_rent_treatment_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "Miss. Code Ann. § 89-8-21"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.nonrefundable_fee_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "Miss. Code Ann. § 89-8-21"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.holding_deposit_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Separate account: Landlord is required to hold security deposit in a separate account in a Mississippi banking institution, or post a surety bond."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_storage_segregation_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "Miss. Code Ann. § 89-8-21"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_transfer_on_sale_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-21",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "Miss. Code Ann. § 89-8-21"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.special_rules_local_overrides_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Nonpayment of rent: 3 days written notice to quit. If tenant pays overdue rent plus any costs before judgment, tenancy may be reinstated."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Lease violation: Generally handled per lease terms; courts enforce lease provisions."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Month-to-month termination: 30 days written notice required."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.month_to_month_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Judicial eviction required: Yes. All evictions must go through the court system."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.judicial_process_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Self-help eviction prohibited: Landlords may NOT use self-help methods; must obtain court judgment and writ of possession."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.self_help_eviction_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Nonpayment of rent: 3 days written notice to quit. If tenant pays overdue rent plus any costs before judgment, tenancy may be reinstated."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Lease violation: Generally handled per lease terms; courts enforce lease provisions."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Lease violation: Generally handled per lease terms; courts enforce lease provisions."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_cure_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Month-to-month termination: 30 days written notice required."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.holdover_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Timeline: Uncontested cases approximately 1-4 weeks."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.timeline_estimate_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Court process: Landlord files in justice court (for amounts typically up to $3,500) or county court; tenant served; hearing within days."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.court_process_summary_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Court process: Landlord files in justice court (for amounts typically up to $3,500) or county court; tenant served; hearing within days."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.filing_court_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-7-27 et seq.; § 89-8-13",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Court process: Landlord files in justice court (for amounts typically up to $3,500) or county court; tenant served; hearing within days."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.service_of_process_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Reasonable notice required: Mississippi law requires 'reasonable notice' before entry. No specific minimum hours mandated."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.notice_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Reasonable notice required: Mississippi law requires 'reasonable notice' before entry. No specific minimum hours mandated."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.typical_notice_hours"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Reasonable notice required: Mississippi law requires 'reasonable notice' before entry. No specific minimum hours mandated."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.advance_notice_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Emergency entry: Landlord may enter without notice in case of emergency."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.emergency_entry_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Entry for repairs: Landlord may enter to make repairs, deliver items, or inspect the premises. - Entry to show: Landlord may enter to show premises to prospective tenants, buyers, or lenders."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.allowed_entry_reasons_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Entry times: Entry should be at reasonable times."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.entry_time_window_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Tenant's rights: Tenant may not unreasonably withhold consent to entry."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.tenant_can_refuse_unreasonable_entry"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. § 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "Miss. Code Ann. § 89-8-25"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.penalty_for_illegal_entry_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-1 to 89-8-29",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Notice required: For month-to-month tenancies, at least 30 days advance written notice."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-1 to 89-8-29",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Rent control: NO statewide rent control in Mississippi."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-1 to 89-8-29",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Rent control: NO statewide rent control in Mississippi."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.statewide_rent_control"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-1 to 89-8-29",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Rent control: NO statewide rent control in Mississippi."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.local_rent_control_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-1 to 89-8-29",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Fixed-term leases: Rent cannot be increased during the lease term."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.fixed_term_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-1 to 89-8-29",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Rent increases: No statutory limit on amount or frequency for month-to-month tenancies."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.month_to_month_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-1 to 89-8-29",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Just cause: Not required for rent increases."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.just_cause_required_for_increase"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-1 to 89-8-29",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Notice required: For month-to-month tenancies, at least 30 days advance written notice."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.delivery_method_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-1 to 89-8-29",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "Miss. Code Ann. §§ 89-8-1 to 89-8-29"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.retaliation_protection_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-11 to 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Implied warranty of habitability: Mississippi law recognizes landlord obligations to maintain habitable premises."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.implied_warranty_of_habitability"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-11 to 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Landlord's duty: Comply with applicable building and housing codes; make repairs to keep premises in good condition; maintain structural, plumbing, heating, electrical systems; provide running water and hot water."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.landlord_repair_duty_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-11 to 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Tenant's remedies:"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_notice_required_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-11 to 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "1. Repair and deduct: NOT ALLOWED under Mississippi law."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.repair_and_deduct_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-11 to 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "2. Rent withholding: NOT ALLOWED. Tenant cannot unilaterally withhold rent."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.rent_withholding_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-11 to 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "3. Termination: Tenant may terminate the rental agreement if conditions substantially impair health or safety and landlord fails to repair after notice."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_termination_for_unrepaired_conditions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-11 to 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "- Retaliatory eviction: NOT specifically prohibited by state statute in Mississippi."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.retaliation_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Miss. Code Ann. §§ 89-8-11 to 89-8-25",
+      "url": "https://www.mslegalservices.org/",
+      "extractedQuotes": [
+        "Miss. Code Ann. §§ 89-8-11 to 89-8-25"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.code_enforcement_contact_rule"
+      ]
+    }
+  ]
+}

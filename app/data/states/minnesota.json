@@ -1,0 +1,102 @@
+{
+  "stateSlug": "minnesota",
+  "stateName": "Minnesota",
+  "year": 2026,
+  "titleTag": "Minnesota Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Minnesota landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Minnesota Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Minnesota security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: 2 months' rent",
+        "Return deadline: 5 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: Varies — confirm current statute.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Varies — confirm current statute."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Minnesota eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: commonly 14 days (verify by tenancy type/notice form).",
+        "Nonpayment notice type: Varies — confirm required notice form (pay-or-quit, demand for possession, etc.).",
+        "Lease violation notice: varies — confirm cure rights and timelines.",
+        "Lease violation notice type: Varies — confirm notice type and cure rules.",
+        "Cure allowed: varies",
+        "Month-to-month termination: commonly 10 days (verify tenancy type).",
+        "Holdover/termination notice type: Varies — confirm termination/holdover notice rules.",
+        "Court process: confirm whether judicial eviction is required (most states prohibit self-help).",
+        "Self-help eviction: varies — confirm current statute and case law.",
+        "Timeline: ",
+        "Court steps: {\"statutes\":\"Minn. Stat. §§ 504B.331, 504B.335, 504B.301\",\"notice_requirements\":{\"nonpayment_of_rent\":\"14-day notice to pay or vacate (HF 4770 of 2024 extended from 3 to 14 days effective 2024)\",\"holdover_tenant\":\"3-month notice to terminate for year-to-year tenancy; 1-month notice for month-to-month\",\"lease_violation\":\"14-day notice to cure or vacate for noncompliance\",\"no_cause\":\"Statewide just cause not required; Minneapolis and St. Paul require just cause for covered units\"},\"full_text\":\"Minn. Stat. § 504B.331. Notice to vacate. (a) A landlord may bring an eviction action if the tenant fails to pay rent when due. The landlord shall give the tenant 14 days' written notice requiring the tenant to pay rent or vacate the premises. (b) If the tenant fails to pay rent within the 14-day period, the landlord may bring an eviction action.\\nMinn. Stat. § 504B.335. Eviction action. The landlord shall bring an eviction action in conciliation court or district court. The court shall hold a hearing within 7 to 10 days after the complaint is served. If the court finds that the tenant owes rent or has violated a material term of the lease, the court may issue an order for restitution of the premises.\\nMinneapolis Just Cause Eviction (Minneapolis Code of Ordinances, Title 16, Chapter 244): Landlords must have just cause to terminate a tenancy for covered units. Just cause includes nonpayment of rent, material breach, nuisance, illegal activity, owner move-in, demolition, and substantial rehabilitation.\\nSt. Paul Just Cause Eviction (St. Paul Legislative Code, Chapter 183): Similar just cause requirements apply to covered residential units in St. Paul.\"}"
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Minnesota landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: Varies — commonly inspections, repairs, services, and showing the unit.",
+        "Timing: Varies — usually at reasonable times.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: varies",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Minnesota rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: typically none, but local/covered-housing rules may apply.",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: varies — confirm current statute and any local ordinances.",
+        "Fixed-term leases: Varies — confirm your lease terms and statute.",
+        "Month-to-month: Varies — generally allowed with proper notice.",
+        "Delivery: Varies — confirm written notice and delivery method requirements.",
+        "Just cause: varies",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Minnesota landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: confirm whether an implied warranty applies",
+        "Landlord repair duty: Varies — confirm landlord repair/habitability duties in statute and local code.",
+        "Tenant notice: Varies — confirm required notice/cure steps before remedies.",
+        "Repair-and-deduct: varies",
+        "Rent withholding: varies",
+        "Termination: Varies — some states allow termination after notice and failure to repair.",
+        "Retaliation: varies",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}

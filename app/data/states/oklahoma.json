@@ -1,0 +1,102 @@
+{
+  "stateSlug": "oklahoma",
+  "stateName": "Oklahoma",
+  "year": 2026,
+  "titleTag": "Oklahoma Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Oklahoma landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Oklahoma Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Oklahoma security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: NO STATUTORY LIMIT",
+        "Return deadline: 45 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: - Permissible deductions: Unpaid rent, damage beyond normal wear and tear, other amounts owed under the lease.",
+        "Penalty risk: - Penalty: If landlord fails to return the deposit within 45 days, tenant may recover actual damages and reasonable attorney's fees. Court may also award punitive damages in bad-faith cases.",
+        "Interest: Varies — confirm current statute."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Oklahoma eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: commonly 5 days (verify by tenancy type/notice form).",
+        "Nonpayment notice type: - Nonpayment of rent: 5 days written notice to quit. If tenant pays all overdue rent within 5 days, tenancy is reinstated.",
+        "Lease violation notice: commonly 5 days (may allow cure).",
+        "Lease violation notice type: - Other lease violations: 10 days written notice specifying the violation.",
+        "Cure allowed: varies",
+        "Month-to-month termination: commonly 5 days (verify tenancy type).",
+        "Holdover/termination notice type: - Month-to-month termination: 30 days written notice required.",
+        "Court process: judicial eviction required (no self-help).",
+        "Self-help eviction: prohibited (generally requires a court order).",
+        "Timeline: - Timeline: Uncontested cases approximately 2-4 weeks.",
+        "Court steps: - Court process: Landlord files in district or municipal court; summons issued; hearing within days."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Oklahoma landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: - Entry for repairs: Landlord may enter to make repairs, deliver packages, or inspect the premises. - Entry to show: Landlord may enter to show premises to prospective tenants, buyers, or lenders.",
+        "Timing: - Entry times: Entry should be at reasonable times, generally during normal business hours.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: tenant cannot unreasonably withhold consent",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Oklahoma rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: exists (coverage and cap formulas vary).",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: varies — confirm current statute and any local ordinances.",
+        "Fixed-term leases: - Fixed-term leases: Rent cannot be increased during the lease term.",
+        "Month-to-month: - Rent increases: No statutory limit on amount or frequency for month-to-month tenancies.",
+        "Delivery: - Notice required: For month-to-month tenancies, at least 30 days advance written notice.",
+        "Just cause: not required",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Oklahoma landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: implied warranty generally applies",
+        "Landlord repair duty: - Landlord's duty: Comply with housing codes; keep premises in good repair; maintain structural, plumbing, heating, electrical systems; provide running water and hot water; provide garbage receptacles.",
+        "Tenant notice: - Tenant's remedies:",
+        "Repair-and-deduct: may be allowed under conditions",
+        "Rent withholding: not allowed / very limited",
+        "Termination: 3. Termination: Tenant may terminate the rental agreement if conditions substantially impair health and safety and landlord fails to repair within 14 days of notice.",
+        "Retaliation: retaliation is prohibited",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}

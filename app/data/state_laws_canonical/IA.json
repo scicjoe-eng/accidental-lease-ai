@@ -1,0 +1,663 @@
+{
+  "state_code": "IA",
+  "state_name": "Iowa",
+  "state_slug": "iowa",
+  "last_verified_at": "2026-04-21",
+  "verified_by": "verify-and-fill-habitability-details",
+  "facts": {
+    "security_deposit": {
+      "cap_rule": "2 months' rent",
+      "return_deadline_days": 30,
+      "interest_rule": "Not required",
+      "itemized_statement_required": true,
+      "itemized_statement_deadline_days": "varies",
+      "allowed_deductions_rule": "Varies — confirm current statute.",
+      "deposit_receipt_required": "varies",
+      "move_in_checklist_required": "varies",
+      "penalty_for_bad_faith_rule": "Varies — confirm current statute.",
+      "prepaid_rent_treatment_rule": "Varies — confirm current statute.",
+      "nonrefundable_fee_rule": "Varies — confirm current statute.",
+      "holding_deposit_rule": "Varies — confirm current statute.",
+      "deposit_storage_segregation_rule": "Varies — confirm current statute.",
+      "deposit_transfer_on_sale_rule": "Varies — confirm current statute.",
+      "special_rules_local_overrides_note": "Local ordinances and special housing programs can add stricter rules.",
+      "notes": []
+    },
+    "eviction": {
+      "nonpayment_notice_days": 3,
+      "lease_violation_notice_days": 7,
+      "month_to_month_notice_days": 30,
+      "judicial_process_required": "varies",
+      "self_help_eviction_prohibited": "varies",
+      "nonpayment_notice_type": "Varies — confirm required notice form (pay-or-quit, demand for possession, etc.).",
+      "lease_violation_notice_type": "Varies — confirm notice type and cure rules.",
+      "lease_violation_cure_allowed": "varies",
+      "holdover_notice_type": "Varies — confirm termination/holdover notice rules.",
+      "timeline_estimate_rule": "2-4 weeks uncontested",
+      "court_process_summary_rule": "Iowa eviction",
+      "filing_court_rule": "Iowa eviction",
+      "service_of_process_rule": "Iowa eviction"
+    },
+    "landlord_entry": {
+      "notice_rule": "varies",
+      "typical_notice_hours": null,
+      "advance_notice_required": "varies",
+      "emergency_entry_allowed": "varies",
+      "allowed_entry_reasons_rule": "Varies — commonly inspections, repairs, services, and showing the unit.",
+      "entry_time_window_rule": "Varies — usually at reasonable times.",
+      "tenant_can_refuse_unreasonable_entry": "varies",
+      "penalty_for_illegal_entry_rule": "Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+    },
+    "rent_increase": {
+      "notice_days": "varies",
+      "cap_rule": "No statewide rent control; local rules may apply.",
+      "statewide_rent_control": false,
+      "local_rent_control_allowed": false,
+      "fixed_term_increase_allowed_rule": "Varies — confirm your lease terms and statute.",
+      "month_to_month_increase_allowed_rule": "Varies — generally allowed with proper notice.",
+      "just_cause_required_for_increase": "varies",
+      "delivery_method_rule": "Varies — confirm written notice and delivery method requirements.",
+      "retaliation_protection_note": "Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+    },
+    "habitability": {
+      "implied_warranty_of_habitability": true,
+      "landlord_repair_duty_rule": "Varies — confirm landlord repair/habitability duties in statute and local code.",
+      "tenant_notice_required_rule": "Varies — confirm required notice/cure steps before remedies.",
+      "repair_and_deduct_allowed": "varies",
+      "rent_withholding_allowed": "varies",
+      "tenant_termination_for_unrepaired_conditions_rule": "Varies — some states allow termination after notice and failure to repair.",
+      "retaliation_prohibited": "varies",
+      "code_enforcement_contact_rule": "Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+    }
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "Bootstrapped from app/data/state_laws.json",
+      "url": "app/data/state_laws.json"
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Maximum amount: 2 months' rent"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Return deadline: 30 days"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.return_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Interest: Not required"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.interest_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Return deadline: 30 days"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.allowed_deductions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_receipt_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.move_in_checklist_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.penalty_for_bad_faith_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.prepaid_rent_treatment_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.nonrefundable_fee_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.holding_deposit_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_storage_segregation_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_transfer_on_sale_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa security deposit",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa security deposit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.special_rules_local_overrides_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.month_to_month_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.judicial_process_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.self_help_eviction_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_cure_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.holdover_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "2-4 weeks uncontested"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.timeline_estimate_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.court_process_summary_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.filing_court_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa eviction",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa eviction"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.service_of_process_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa landlord entry",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa landlord entry"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.notice_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa landlord entry",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa landlord entry"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.typical_notice_hours"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa landlord entry",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa landlord entry"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.advance_notice_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa landlord entry",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa landlord entry"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.emergency_entry_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa landlord entry",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Varies — commonly inspections, repairs, services, and showing the unit."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.allowed_entry_reasons_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa landlord entry",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa landlord entry"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.entry_time_window_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa landlord entry",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa landlord entry"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.tenant_can_refuse_unreasonable_entry"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa landlord entry",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa landlord entry"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.penalty_for_illegal_entry_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa rent increase",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa rent increase",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa rent increase",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.statewide_rent_control"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa rent increase",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.local_rent_control_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa rent increase",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.fixed_term_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa rent increase",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.month_to_month_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa rent increase",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.just_cause_required_for_increase"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa rent increase",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.delivery_method_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa rent increase",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.retaliation_protection_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa habitability",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa habitability"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.implied_warranty_of_habitability"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa habitability",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa habitability"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.landlord_repair_duty_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa habitability",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa habitability"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_notice_required_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa habitability",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa habitability"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.repair_and_deduct_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa habitability",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa habitability"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.rent_withholding_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa habitability",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa habitability"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_termination_for_unrepaired_conditions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa habitability",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa habitability"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.retaliation_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Iowa habitability",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=562A",
+      "extractedQuotes": [
+        "Iowa habitability"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.code_enforcement_contact_rule"
+      ]
+    }
+  ]
+}

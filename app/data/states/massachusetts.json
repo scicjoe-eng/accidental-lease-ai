@@ -1,0 +1,102 @@
+{
+  "stateSlug": "massachusetts",
+  "stateName": "Massachusetts",
+  "year": 2026,
+  "titleTag": "Massachusetts Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Massachusetts landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Massachusetts Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Massachusetts security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: exceed 5",
+        "Return deadline: 10 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: Varies — confirm current statute.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Varies — confirm current statute."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Massachusetts eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: varies — confirm current statute and required notice form.",
+        "Nonpayment notice type: Varies — confirm required notice form (pay-or-quit, demand for possession, etc.).",
+        "Lease violation notice: varies — confirm cure rights and timelines.",
+        "Lease violation notice type: Varies — confirm notice type and cure rules.",
+        "Cure allowed: varies",
+        "Month-to-month termination: commonly 7 days (verify tenancy type).",
+        "Holdover/termination notice type: Varies — confirm termination/holdover notice rules.",
+        "Court process: confirm whether judicial eviction is required (most states prohibit self-help).",
+        "Self-help eviction: prohibited (generally requires a court order).",
+        "Timeline: ",
+        "Court steps: {\"statutes\":\"M.G.L. c. 239, § 8A; M.G.L. c. 186, § 18\",\"notice_requirements\":{\"nonpayment_of_rent\":\"14-day notice to quit for nonpayment (c. 239, § 8A); summary process action follows\",\"holdover_tenant\":\"30-day notice to quit for month-to-month tenancy (or longer if lease specifies); 7-day notice for week-to-week tenancy\",\"lease_violation\":\"30-day notice to cure or quit for material breach\",\"no_cause\":\"30-day notice to terminate month-to-month tenancy (statewide); Boston requires just cause for eviction of covered units\"},\"full_text\":\"M.G.L. c. 239, § 8A. Summary process for nonpayment of rent. (a) A landlord may bring a summary process action for nonpayment of rent if the rent is 7 days or more overdue. The landlord must first give the tenant a 14-day notice to quit. (b) The court shall grant judgment for the landlord if the tenant fails to pay all overdue rent and reasonable costs within 7 days after the return day. (c) If the tenant pays all overdue rent and costs before judgment, the action shall be dismissed.\\nM.G.L. c. 186, § 18. Retaliatory eviction. No landlord may evict or attempt to evict a tenant solely because the tenant has exercised any right under this chapter or any other law. If the landlord brings an eviction action within 6 months of the tenant's protected activity, there is a rebuttable presumption of retaliation.\\nBoston Just Cause Eviction (Local Ordinance, effective 2024): Covered residential units may not be evicted except for just cause, which includes nonpayment of rent, material breach, nuisance, illegal activity, owner move-in, and substantial rehabilitation.\"}"
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Massachusetts landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: Varies — commonly inspections, repairs, services, and showing the unit.",
+        "Timing: Varies — usually at reasonable times.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: varies",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Massachusetts rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: typically none, but local/covered-housing rules may apply.",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: varies — confirm current statute and any local ordinances.",
+        "Fixed-term leases: Varies — confirm your lease terms and statute.",
+        "Month-to-month: Varies — generally allowed with proper notice.",
+        "Delivery: Varies — confirm written notice and delivery method requirements.",
+        "Just cause: varies",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Massachusetts landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: confirm whether an implied warranty applies",
+        "Landlord repair duty: Varies — confirm landlord repair/habitability duties in statute and local code.",
+        "Tenant notice: Varies — confirm required notice/cure steps before remedies.",
+        "Repair-and-deduct: varies",
+        "Rent withholding: varies",
+        "Termination: Varies — some states allow termination after notice and failure to repair.",
+        "Retaliation: varies",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}

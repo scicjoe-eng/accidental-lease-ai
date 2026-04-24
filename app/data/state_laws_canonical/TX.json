@@ -1,0 +1,663 @@
+{
+  "state_code": "TX",
+  "state_name": "Texas",
+  "state_slug": "texas",
+  "last_verified_at": "2026-04-21",
+  "verified_by": "verify-and-fill-habitability-details",
+  "facts": {
+    "security_deposit": {
+      "cap_rule": "1 month's rent (cap applies only to funds explicitly called 'security deposits')",
+      "return_deadline_days": 30,
+      "interest_rule": "Not required",
+      "itemized_statement_required": true,
+      "itemized_statement_deadline_days": "varies",
+      "allowed_deductions_rule": "Varies — confirm current statute.",
+      "deposit_receipt_required": "varies",
+      "move_in_checklist_required": "varies",
+      "penalty_for_bad_faith_rule": "Varies — confirm current statute.",
+      "prepaid_rent_treatment_rule": "Varies — confirm current statute.",
+      "nonrefundable_fee_rule": "Varies — confirm current statute.",
+      "holding_deposit_rule": "Varies — confirm current statute.",
+      "deposit_storage_segregation_rule": "Varies — confirm current statute.",
+      "deposit_transfer_on_sale_rule": "Varies — confirm current statute.",
+      "special_rules_local_overrides_note": "Local ordinances and special housing programs can add stricter rules.",
+      "notes": []
+    },
+    "eviction": {
+      "nonpayment_notice_days": 3,
+      "lease_violation_notice_days": 3,
+      "month_to_month_notice_days": 30,
+      "judicial_process_required": false,
+      "self_help_eviction_prohibited": true,
+      "nonpayment_notice_type": "Varies — confirm required notice form (pay-or-quit, demand for possession, etc.).",
+      "lease_violation_notice_type": "Varies — confirm notice type and cure rules.",
+      "lease_violation_cure_allowed": "varies",
+      "holdover_notice_type": "Varies — confirm termination/holdover notice rules.",
+      "timeline_estimate_rule": "",
+      "court_process_summary_rule": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "filing_court_rule": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "service_of_process_rule": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+    },
+    "landlord_entry": {
+      "notice_rule": "reasonable",
+      "typical_notice_hours": null,
+      "advance_notice_required": "varies",
+      "emergency_entry_allowed": "varies",
+      "allowed_entry_reasons_rule": "Tex. Prop. Code Sec. 92.0081. REMOVAL OF PROPERTY AND EXCLUSION OF RESIDENTIAL TENANT. (a) A landlord may not remove a door, window, or attic hatchway cover or a lock, latch, hinge, hinge pin, doorknob, or other mechanism connected to a door, window, or attic hatchway cover from a dwelling unit or remove furniture, fixtures, or appliances furnished by the landlord from a dwelling unit unless the landlord is making a good faith effort to repair or replace [them]. (b) Except as provided by Subsection (g), a landlord may not intentionally prevent a tenant from entering the leased premises except by judicial process.",
+      "entry_time_window_rule": "Varies — usually at reasonable times.",
+      "tenant_can_refuse_unreasonable_entry": "varies",
+      "penalty_for_illegal_entry_rule": "Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+    },
+    "rent_increase": {
+      "notice_days": 30,
+      "cap_rule": "No statewide rent control; local rules may apply.",
+      "statewide_rent_control": false,
+      "local_rent_control_allowed": false,
+      "fixed_term_increase_allowed_rule": "Varies — confirm your lease terms and statute.",
+      "month_to_month_increase_allowed_rule": "Varies — generally allowed with proper notice.",
+      "just_cause_required_for_increase": "varies",
+      "delivery_method_rule": "Varies — confirm written notice and delivery method requirements.",
+      "retaliation_protection_note": "Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+    },
+    "habitability": {
+      "implied_warranty_of_habitability": false,
+      "landlord_repair_duty_rule": "Varies — confirm landlord repair/habitability duties in statute and local code.",
+      "tenant_notice_required_rule": "Varies — confirm required notice/cure steps before remedies.",
+      "repair_and_deduct_allowed": "varies",
+      "rent_withholding_allowed": "varies",
+      "tenant_termination_for_unrepaired_conditions_rule": "Varies — some states allow termination after notice and failure to repair.",
+      "retaliation_prohibited": "varies",
+      "code_enforcement_contact_rule": "Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+    }
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "Bootstrapped from app/data/state_laws.json",
+      "url": "app/data/state_laws.json"
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Maximum amount: 1 month's rent (cap applies only to funds explicitly called 'security deposits')"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Return deadline: 30 days"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.return_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Interest: Not required"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.interest_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Return deadline: 30 days"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.allowed_deductions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_receipt_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.move_in_checklist_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.penalty_for_bad_faith_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.prepaid_rent_treatment_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.nonrefundable_fee_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.holding_deposit_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_storage_segregation_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_transfer_on_sale_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code §§ 92.101–92.111",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code §§ 92.101–92.111"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.special_rules_local_overrides_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.month_to_month_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.judicial_process_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.self_help_eviction_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_cure_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.holdover_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        ""
+      ],
+      "appliesToFacts": [
+        "facts.eviction.timeline_estimate_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.court_process_summary_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.filing_court_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code § 24.005. NOTICE TO VACATE. (a) If the occupant is a tenant under a written lease or oral rental agreement, the landlord must give a tenant who defaults or holds over beyond a rental agreement three days' written notice to vacate the premises before the landlord files a forcible detainer suit, unless the parties have contracted for a shorter or longer notice period in a written lease or agreement. The landlord may not waive or eliminate the right to file a forcible detainer suit by accepting past due rent."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.service_of_process_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.notice_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.typical_notice_hours"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.advance_notice_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.emergency_entry_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code Sec. 92.0081. REMOVAL OF PROPERTY AND EXCLUSION OF RESIDENTIAL TENANT. (a) A landlord may not remove a door, window, or attic hatchway cover or a lock, latch, hinge, hinge pin, doorknob, or other mechanism connected to a door, window, or attic hatchway cover from a dwelling unit or remove furniture, fixtures, or appliances furnished by the landlord from a dwelling unit unless the landlord is making a good faith effort to repair or replace [them]. (b) Except as provided by Subsection (g), a landlord may not intentionally prevent a tenant from entering the leased premises except by judicial process."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.allowed_entry_reasons_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.entry_time_window_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.tenant_can_refuse_unreasonable_entry"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas has no specific statewide advance notice statute for landlord entry. Reasonable notice implied by common law. Self-help eviction prohibited per:"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.penalty_for_illegal_entry_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas rent increase",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas rent increase",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas rent increase",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.statewide_rent_control"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas rent increase",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.local_rent_control_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas rent increase",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.fixed_term_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas rent increase",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.month_to_month_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas rent increase",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.just_cause_required_for_increase"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas rent increase",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.delivery_method_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Texas rent increase",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Texas rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.retaliation_protection_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.implied_warranty_of_habitability"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.landlord_repair_duty_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_notice_required_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.repair_and_deduct_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.rent_withholding_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_termination_for_unrepaired_conditions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.retaliation_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit.",
+      "url": "https://www.law.cornell.edu/states/texas",
+      "extractedQuotes": [
+        "Tex. Prop. Code Sec. 92.052. LANDLORD'S DUTY TO REPAIR OR REMEDY. (a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord's failure to provide and maintain in good working order a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.code_enforcement_contact_rule"
+      ]
+    }
+  ]
+}

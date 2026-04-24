@@ -1,0 +1,663 @@
+{
+  "state_code": "NC",
+  "state_name": "North Carolina",
+  "state_slug": "north-carolina",
+  "last_verified_at": "2026-04-21",
+  "verified_by": "verify-and-fill-habitability-details",
+  "facts": {
+    "security_deposit": {
+      "cap_rule": "No statutory limit",
+      "return_deadline_days": 30,
+      "interest_rule": "Must pay interest on deposits held > 5 years (N.C.G.S. § 42-50)",
+      "itemized_statement_required": true,
+      "itemized_statement_deadline_days": "varies",
+      "allowed_deductions_rule": "Varies — confirm current statute.",
+      "deposit_receipt_required": "varies",
+      "move_in_checklist_required": "varies",
+      "penalty_for_bad_faith_rule": "Varies — confirm current statute.",
+      "prepaid_rent_treatment_rule": "Varies — confirm current statute.",
+      "nonrefundable_fee_rule": "Varies — confirm current statute.",
+      "holding_deposit_rule": "Varies — confirm current statute.",
+      "deposit_storage_segregation_rule": "Varies — confirm current statute.",
+      "deposit_transfer_on_sale_rule": "Varies — confirm current statute.",
+      "special_rules_local_overrides_note": "Local ordinances and special housing programs can add stricter rules.",
+      "notes": []
+    },
+    "eviction": {
+      "nonpayment_notice_days": 5,
+      "lease_violation_notice_days": 30,
+      "month_to_month_notice_days": 30,
+      "judicial_process_required": "varies",
+      "self_help_eviction_prohibited": true,
+      "nonpayment_notice_type": "(1) Nonpayment of rent: 10-day demand for payment (N.C.G.S. §42-3). Tenant has 10 days from receipt to pay all past due rent before landlord can file for summary ejectment.",
+      "lease_violation_notice_type": "(2) Lease violation: 30-day written notice to cure or vacate (for most violations).",
+      "lease_violation_cure_allowed": "varies",
+      "holdover_notice_type": "(3) Month-to-month termination: 7-day notice prior to end of rental period.",
+      "timeline_estimate_rule": "",
+      "court_process_summary_rule": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "filing_court_rule": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "service_of_process_rule": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD."
+    },
+    "landlord_entry": {
+      "notice_rule": "varies",
+      "typical_notice_hours": null,
+      "advance_notice_required": "varies",
+      "emergency_entry_allowed": true,
+      "allowed_entry_reasons_rule": "Varies — commonly inspections, repairs, services, and showing the unit.",
+      "entry_time_window_rule": "Varies — usually at reasonable times.",
+      "tenant_can_refuse_unreasonable_entry": true,
+      "penalty_for_illegal_entry_rule": "Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+    },
+    "rent_increase": {
+      "notice_days": 7,
+      "cap_rule": "No statewide rent control; local rules may apply.",
+      "statewide_rent_control": false,
+      "local_rent_control_allowed": false,
+      "fixed_term_increase_allowed_rule": "Varies — confirm your lease terms and statute.",
+      "month_to_month_increase_allowed_rule": "Varies — generally allowed with proper notice.",
+      "just_cause_required_for_increase": "varies",
+      "delivery_method_rule": "Varies — confirm written notice and delivery method requirements.",
+      "retaliation_protection_note": "Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+    },
+    "habitability": {
+      "implied_warranty_of_habitability": true,
+      "landlord_repair_duty_rule": "(1) Comply with the current applicable building and housing codes, whether enacted before or after the effective date of this article;",
+      "tenant_notice_required_rule": "Varies — confirm required notice/cure steps before remedies.",
+      "repair_and_deduct_allowed": "varies",
+      "rent_withholding_allowed": "varies",
+      "tenant_termination_for_unrepaired_conditions_rule": "Varies — some states allow termination after notice and failure to repair.",
+      "retaliation_prohibited": "varies",
+      "code_enforcement_contact_rule": "Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+    }
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "Bootstrapped from app/data/state_laws.json",
+      "url": "app/data/state_laws.json"
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "Maximum amount: No statutory limit"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "Return deadline: 30 days"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.return_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "Interest: Must pay interest on deposits held > 5 years (N.C.G.S. § 42-50)"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.interest_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "Return deadline: 30 days"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.allowed_deductions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_receipt_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.move_in_checklist_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.penalty_for_bad_faith_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.prepaid_rent_treatment_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.nonrefundable_fee_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.holding_deposit_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_storage_segregation_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_transfer_on_sale_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-50. DEPOSITS FROM THE TENANT."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.special_rules_local_overrides_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "(1) Nonpayment of rent: 10-day demand for payment (N.C.G.S. §42-3). Tenant has 10 days from receipt to pay all past due rent before landlord can file for summary ejectment."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "(2) Lease violation: 30-day written notice to cure or vacate (for most violations)."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "(3) Month-to-month termination: 7-day notice prior to end of rental period."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.month_to_month_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.judicial_process_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "Self-help eviction prohibited. Wrongful eviction: tenant may recover actual damages, or punitive damages."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.self_help_eviction_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "(1) Nonpayment of rent: 10-day demand for payment (N.C.G.S. §42-3). Tenant has 10 days from receipt to pay all past due rent before landlord can file for summary ejectment."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "(2) Lease violation: 30-day written notice to cure or vacate (for most violations)."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "(2) Lease violation: 30-day written notice to cure or vacate (for most violations)."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_cure_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "(3) Month-to-month termination: 7-day notice prior to end of rental period."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.holdover_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        ""
+      ],
+      "appliesToFacts": [
+        "facts.eviction.timeline_estimate_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.court_process_summary_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.filing_court_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-26. TENANT'S BREACH; TERMINATION BY LANDLORD."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.service_of_process_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.notice_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.typical_notice_hours"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.advance_notice_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "Most leases and courts apply a standard of 24 hours advance notice for non-emergency inspections and repairs. Emergency entry permitted without notice. Self-help lockouts prohibited."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.emergency_entry_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "Varies — commonly inspections, repairs, services, and showing the unit."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.allowed_entry_reasons_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.entry_time_window_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.tenant_can_refuse_unreasonable_entry"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-43(a)(8). Tenant obligations include: shall not unreasonably withhold consent to the landlord to enter the unit to inspect, make repairs, and show the unit."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.penalty_for_illegal_entry_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "North Carolina rent increase",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "North Carolina rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "North Carolina rent increase",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "North Carolina rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "North Carolina rent increase",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "North Carolina rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.statewide_rent_control"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "North Carolina rent increase",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "North Carolina rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.local_rent_control_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "North Carolina rent increase",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "North Carolina rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.fixed_term_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "North Carolina rent increase",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "North Carolina rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.month_to_month_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "North Carolina rent increase",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "North Carolina rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.just_cause_required_for_increase"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "North Carolina rent increase",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "North Carolina rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.delivery_method_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "North Carolina rent increase",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "North Carolina rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.retaliation_protection_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.implied_warranty_of_habitability"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "(1) Comply with the current applicable building and housing codes, whether enacted before or after the effective date of this article;"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.landlord_repair_duty_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_notice_required_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.repair_and_deduct_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.rent_withholding_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_termination_for_unrepaired_conditions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.retaliation_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY.",
+      "url": "https://www.law.cornell.edu/states/north-carolina",
+      "extractedQuotes": [
+        "N.C.G.S. § 42-42. LANDLORD'S OBLIGATIONS. IMPLIED WARRANTY OF HABITABILITY."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.code_enforcement_contact_rule"
+      ]
+    }
+  ]
+}

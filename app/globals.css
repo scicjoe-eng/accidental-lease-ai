@@ -1,3 +1,4 @@
+/* Package imports resolve from project root (package.json), not from app/ — avoids wrong cwd when parent folders have lockfiles. */
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";

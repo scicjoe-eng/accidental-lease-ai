@@ -1,0 +1,102 @@
+{
+  "stateSlug": "virginia",
+  "stateName": "Virginia",
+  "year": 2026,
+  "titleTag": "Virginia Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Virginia landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Virginia Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Virginia security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: 2 months' periodic rent",
+        "Return deadline: 45 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: Varies — confirm current statute.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Not required"
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Virginia eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: commonly 5 days (verify by tenancy type/notice form).",
+        "Nonpayment notice type: Varies — confirm required notice form (pay-or-quit, demand for possession, etc.).",
+        "Lease violation notice: commonly 30 days (may allow cure).",
+        "Lease violation notice type: Varies — confirm notice type and cure rules.",
+        "Cure allowed: varies",
+        "Month-to-month termination: commonly 30 days (verify tenancy type).",
+        "Holdover/termination notice type: Varies — confirm termination/holdover notice rules.",
+        "Court process: confirm whether judicial eviction is required (most states prohibit self-help).",
+        "Self-help eviction: prohibited (generally requires a court order).",
+        "Timeline: ",
+        "Court steps: {\"statutes\":\"Va. Code §§ 55.1-1245, 55.1-1245 (two versions: current and effective July 1, 2028)\",\"notice_requirements\":{\"nonpayment_of_rent\":\"5-day written notice to pay or vacate (current version); same with extended notice periods (2028 version)\",\"holdover_tenant\":\"30-day notice to terminate for month-to-month tenancy\",\"lease_violation\":\"21-day notice to cure for material breach; 30-day notice before termination\",\"no_cause\":\"30-day notice for month-to-month (VRLTA-covered units)\",\"criminal_activity\":\"Immediate termination allowed for drug crimes or criminal acts threatening health/safety\"},\"full_text\":\"§ 55.1-1245. Noncompliance with rental agreement; monetary penalty.\\nA. Material breach. If the tenant commits a material breach of the rental agreement or a violation of § 55.1-1227 that materially affects health and safety, the landlord may give written notice specifying the tenant's acts or omissions and stating that the rental agreement will terminate no less than 30 days after receipt of the notice if the breach is not remedied within 21 days.\\nB. If the breach is remediable by repair or the payment of damages and the tenant adequately remedies the breach within 21 days, the rental agreement does not terminate.\\nC. Nonremediable breach. If the breach is nonremediable by repair or the payment of damages, the landlord may give written notice stating that the rental agreement will terminate no less than 30 days after receipt.\\nD. Immediate termination. If the tenant's breach consists of or constitutes a criminal or intentional act that is nonremediable and threatens health or safety, including drug-related criminal activity (as defined under § 54.1-3400), the landlord may terminate immediately and bring an action for possession. Court must hold first hearing within 15 calendar days of service.\\nE. Repeated breach. If a tenant who has previously received a written notice to remedy a breach and has remedied it commits the same type of breach again, the landlord may give 30 days' written notice to terminate.\\nF. Nonpayment of rent. If the tenant fails to pay rent when due, the landlord may give written notice requiring the tenant to pay rent or vacate within 5 days. For NSF checks, electronic payment failures, or bad faith stop payments, the tenant must pay within 5 days by cash, certified check, cashier's check, or completed electronic transfer.\\nJ. COVID-19 Rental History Protection (2025). Landlords with more than 4 units may not take adverse action based solely on payment history or eviction records from March 12, 2020 through 30 days after the state of emergency ends. Applicants may dispute within 7 days. Violation carries $1,000 statutory damages plus attorney fees.\"}"
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Virginia landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: Varies — commonly inspections, repairs, services, and showing the unit.",
+        "Timing: Varies — usually at reasonable times.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: varies",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Virginia rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: typically none, but local/covered-housing rules may apply.",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: commonly 60 days' written notice for month-to-month tenancies.",
+        "Fixed-term leases: Varies — confirm your lease terms and statute.",
+        "Month-to-month: Varies — generally allowed with proper notice.",
+        "Delivery: Varies — confirm written notice and delivery method requirements.",
+        "Just cause: varies",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Virginia landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: confirm whether an implied warranty applies",
+        "Landlord repair duty: Varies — confirm landlord repair/habitability duties in statute and local code.",
+        "Tenant notice: Varies — confirm required notice/cure steps before remedies.",
+        "Repair-and-deduct: varies",
+        "Rent withholding: varies",
+        "Termination: Varies — some states allow termination after notice and failure to repair.",
+        "Retaliation: varies",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}

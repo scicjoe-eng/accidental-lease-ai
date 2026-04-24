@@ -1,0 +1,663 @@
+{
+  "state_code": "MO",
+  "state_name": "Missouri",
+  "state_slug": "missouri",
+  "last_verified_at": "2026-04-21",
+  "verified_by": "verify-and-fill-habitability-details",
+  "facts": {
+    "security_deposit": {
+      "cap_rule": "2 months' rent",
+      "return_deadline_days": 30,
+      "interest_rule": "Varies — confirm current statute.",
+      "itemized_statement_required": true,
+      "itemized_statement_deadline_days": "varies",
+      "allowed_deductions_rule": "- Permissible deductions: Unpaid rent, damage beyond normal wear and tear.",
+      "deposit_receipt_required": "varies",
+      "move_in_checklist_required": "varies",
+      "penalty_for_bad_faith_rule": "Varies — confirm current statute.",
+      "prepaid_rent_treatment_rule": "Varies — confirm current statute.",
+      "nonrefundable_fee_rule": "Varies — confirm current statute.",
+      "holding_deposit_rule": "Varies — confirm current statute.",
+      "deposit_storage_segregation_rule": "- Separate account: Not required by state law.",
+      "deposit_transfer_on_sale_rule": "Varies — confirm current statute.",
+      "special_rules_local_overrides_note": "Local ordinances and special housing programs can add stricter rules.",
+      "notes": []
+    },
+    "eviction": {
+      "nonpayment_notice_days": 30,
+      "lease_violation_notice_days": 30,
+      "month_to_month_notice_days": 30,
+      "judicial_process_required": true,
+      "self_help_eviction_prohibited": true,
+      "nonpayment_notice_type": "- Nonpayment of rent: Most jurisdictions do NOT require pre-litigation notice — landlord may file immediately. Some require a 5-day notice to quit.",
+      "lease_violation_notice_type": "- Lease violation: Landlord must give tenant notice and opportunity to cure. Time period depends on the nature of the violation.",
+      "lease_violation_cure_allowed": "varies",
+      "holdover_notice_type": "- Month-to-month termination: 30 days written notice required.",
+      "timeline_estimate_rule": "- Eviction timeline: Uncontested cases approximately 2-4 weeks.",
+      "court_process_summary_rule": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "filing_court_rule": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "service_of_process_rule": "- Court procedure: Landlord files suit in associate circuit court; tenant is served; court hearing scheduled within days."
+    },
+    "landlord_entry": {
+      "notice_rule": "reasonable",
+      "typical_notice_hours": null,
+      "advance_notice_required": true,
+      "emergency_entry_allowed": true,
+      "allowed_entry_reasons_rule": "- Entry for repairs: Landlord may enter to make repairs, inspections, or to supply necessary services. - Entry to show: Landlord may enter to show the premises to prospective tenants during the last 30 days of tenancy.",
+      "entry_time_window_rule": "- Entry times: Entry should be at reasonable times during normal business hours.",
+      "tenant_can_refuse_unreasonable_entry": "varies",
+      "penalty_for_illegal_entry_rule": "Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+    },
+    "rent_increase": {
+      "notice_days": null,
+      "cap_rule": "Statewide rent control applies (coverage varies).",
+      "statewide_rent_control": true,
+      "local_rent_control_allowed": "varies",
+      "fixed_term_increase_allowed_rule": "- Fixed-term leases: Rent cannot be increased during the lease term.",
+      "month_to_month_increase_allowed_rule": "- Rent increases: No statutory limit on amount or frequency for month-to-month tenancies.",
+      "just_cause_required_for_increase": false,
+      "delivery_method_rule": "- Notice required: For month-to-month tenancies, at least 30 days advance written notice.",
+      "retaliation_protection_note": "Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+    },
+    "habitability": {
+      "implied_warranty_of_habitability": true,
+      "landlord_repair_duty_rule": "- Landlord's duty: Maintain structural components, plumbing, heating, electrical systems; provide running water and hot water; comply with housing codes.",
+      "tenant_notice_required_rule": "- Tenant's remedies:",
+      "repair_and_deduct_allowed": true,
+      "rent_withholding_allowed": false,
+      "tenant_termination_for_unrepaired_conditions_rule": "3. Termination: Tenant may terminate the rental agreement if conditions substantially impair health or safety.",
+      "retaliation_prohibited": true,
+      "code_enforcement_contact_rule": "Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+    }
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "Bootstrapped from app/data/state_laws.json",
+      "url": "app/data/state_laws.json"
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Maximum amount: 2 months' rent (for unfurnished residential property)."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Return deadline: 30 days after tenancy ends AND after tenant provides forwarding address."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.return_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Interest: Varies — confirm current statute."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.interest_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Itemization required: Yes. Landlord must provide a written, itemized statement of deductions."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Return deadline: 30 days after tenancy ends AND after tenant provides forwarding address."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Permissible deductions: Unpaid rent, damage beyond normal wear and tear."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.allowed_deductions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 535.300"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_receipt_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 535.300"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.move_in_checklist_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 535.300"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.penalty_for_bad_faith_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 535.300"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.prepaid_rent_treatment_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 535.300"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.nonrefundable_fee_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 535.300"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.holding_deposit_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Separate account: Not required by state law."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_storage_segregation_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 535.300"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_transfer_on_sale_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 535.300",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 535.300"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.special_rules_local_overrides_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Nonpayment of rent: Most jurisdictions do NOT require pre-litigation notice — landlord may file immediately. Some require a 5-day notice to quit."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Lease violation: Landlord must give tenant notice and opportunity to cure. Time period depends on the nature of the violation."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Month-to-month termination: 30 days written notice required."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.month_to_month_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Judicial eviction required: Yes. All evictions must go through the court system."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.judicial_process_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Self-help eviction prohibited: Lockouts, utility shutoffs, and physical removal of tenant's belongings are illegal."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.self_help_eviction_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Nonpayment of rent: Most jurisdictions do NOT require pre-litigation notice — landlord may file immediately. Some require a 5-day notice to quit."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Lease violation: Landlord must give tenant notice and opportunity to cure. Time period depends on the nature of the violation."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Lease violation: Landlord must give tenant notice and opportunity to cure. Time period depends on the nature of the violation."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_cure_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Month-to-month termination: 30 days written notice required."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.holdover_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Eviction timeline: Uncontested cases approximately 2-4 weeks."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.timeline_estimate_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. §§ 441.510–441.880"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.court_process_summary_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. §§ 441.510–441.880"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.filing_court_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. §§ 441.510–441.880",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Court procedure: Landlord files suit in associate circuit court; tenant is served; court hearing scheduled within days."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.service_of_process_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.220",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Reasonable notice required: Missouri law requires 'reasonable notice' before entry. While no specific number of hours is mandated, courts generally recognize 24 hours as reasonable."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.notice_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.220",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Reasonable notice required: Missouri law requires 'reasonable notice' before entry. While no specific number of hours is mandated, courts generally recognize 24 hours as reasonable."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.typical_notice_hours"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.220",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Reasonable notice required: Missouri law requires 'reasonable notice' before entry. While no specific number of hours is mandated, courts generally recognize 24 hours as reasonable."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.advance_notice_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.220",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Emergency entry: Landlord may enter without prior notice in case of emergency."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.emergency_entry_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.220",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Entry for repairs: Landlord may enter to make repairs, inspections, or to supply necessary services. - Entry to show: Landlord may enter to show the premises to prospective tenants during the last 30 days of tenancy."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.allowed_entry_reasons_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.220",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Entry times: Entry should be at reasonable times during normal business hours."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.entry_time_window_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.220",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 441.220"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.tenant_can_refuse_unreasonable_entry"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.220",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 441.220"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.penalty_for_illegal_entry_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.043",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Notice required: For month-to-month tenancies, at least 30 days advance written notice."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.043",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Rent control: PROHIBITED statewide. Mo. Rev. Stat. § 441.043 expressly prohibits any Missouri municipality from enacting rent or price control ordinances."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.043",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Rent control: PROHIBITED statewide. Mo. Rev. Stat. § 441.043 expressly prohibits any Missouri municipality from enacting rent or price control ordinances."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.statewide_rent_control"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.043",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Rent control: PROHIBITED statewide. Mo. Rev. Stat. § 441.043 expressly prohibits any Missouri municipality from enacting rent or price control ordinances."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.local_rent_control_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.043",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Fixed-term leases: Rent cannot be increased during the lease term."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.fixed_term_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.043",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Rent increases: No statutory limit on amount or frequency for month-to-month tenancies."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.month_to_month_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.043",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Just cause: Not required for rent increases."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.just_cause_required_for_increase"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.043",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Notice required: For month-to-month tenancies, at least 30 days advance written notice."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.delivery_method_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.043",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 441.043"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.retaliation_protection_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.234; § 441.500 et seq.",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Implied warranty of habitability: Missouri recognizes that landlords must maintain rental premises in a fit and habitable condition."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.implied_warranty_of_habitability"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.234; § 441.500 et seq.",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Landlord's duty: Maintain structural components, plumbing, heating, electrical systems; provide running water and hot water; comply with housing codes."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.landlord_repair_duty_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.234; § 441.500 et seq.",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Tenant's remedies:"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_notice_required_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.234; § 441.500 et seq.",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "1. Repair and deduct: ALLOWED. Mo. Rev. Stat. § 441.234: Tenant may have repairs made and deduct up to the lesser of $300 or one-half month's rent, per repair occurrence, after giving landlord proper written notice and reasonable time to repair."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.repair_and_deduct_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.234; § 441.500 et seq.",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "2. Rent withholding: NOT ALLOWED. Tenant may NOT withhold rent for habitability issues."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.rent_withholding_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.234; § 441.500 et seq.",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "3. Termination: Tenant may terminate the rental agreement if conditions substantially impair health or safety."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_termination_for_unrepaired_conditions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.234; § 441.500 et seq.",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "- Retaliatory eviction: PROHIBITED. Mo. Rev. Stat. § 441.500 et seq. prohibits eviction in retaliation for tenant's good-faith complaints to government agencies."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.retaliation_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Mo. Rev. Stat. § 441.234; § 441.500 et seq.",
+      "url": "https://lsem.org/",
+      "extractedQuotes": [
+        "Mo. Rev. Stat. § 441.234; § 441.500 et seq."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.code_enforcement_contact_rule"
+      ]
+    }
+  ]
+}

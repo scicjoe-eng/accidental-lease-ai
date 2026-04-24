@@ -1,0 +1,663 @@
+{
+  "state_code": "OK",
+  "state_name": "Oklahoma",
+  "state_slug": "oklahoma",
+  "last_verified_at": "2026-04-21",
+  "verified_by": "verify-and-fill-habitability-details",
+  "facts": {
+    "security_deposit": {
+      "cap_rule": "NO STATUTORY LIMIT",
+      "return_deadline_days": 45,
+      "interest_rule": "Varies — confirm current statute.",
+      "itemized_statement_required": true,
+      "itemized_statement_deadline_days": "varies",
+      "allowed_deductions_rule": "- Permissible deductions: Unpaid rent, damage beyond normal wear and tear, other amounts owed under the lease.",
+      "deposit_receipt_required": "varies",
+      "move_in_checklist_required": "varies",
+      "penalty_for_bad_faith_rule": "- Penalty: If landlord fails to return the deposit within 45 days, tenant may recover actual damages and reasonable attorney's fees. Court may also award punitive damages in bad-faith cases.",
+      "prepaid_rent_treatment_rule": "Varies — confirm current statute.",
+      "nonrefundable_fee_rule": "Varies — confirm current statute.",
+      "holding_deposit_rule": "Varies — confirm current statute.",
+      "deposit_storage_segregation_rule": "- Separate account: Landlord is required to place the security deposit in a banking institution in Oklahoma, either in a separate account or by posting a surety bond.",
+      "deposit_transfer_on_sale_rule": "- Transfer of ownership: New owner is responsible for the security deposit; 30 days notice of transfer required.",
+      "special_rules_local_overrides_note": "Local ordinances and special housing programs can add stricter rules.",
+      "notes": []
+    },
+    "eviction": {
+      "nonpayment_notice_days": 5,
+      "lease_violation_notice_days": 5,
+      "month_to_month_notice_days": 5,
+      "judicial_process_required": true,
+      "self_help_eviction_prohibited": true,
+      "nonpayment_notice_type": "- Nonpayment of rent: 5 days written notice to quit. If tenant pays all overdue rent within 5 days, tenancy is reinstated.",
+      "lease_violation_notice_type": "- Other lease violations: 10 days written notice specifying the violation.",
+      "lease_violation_cure_allowed": "varies",
+      "holdover_notice_type": "- Month-to-month termination: 30 days written notice required.",
+      "timeline_estimate_rule": "- Timeline: Uncontested cases approximately 2-4 weeks.",
+      "court_process_summary_rule": "- Court process: Landlord files in district or municipal court; summons issued; hearing within days.",
+      "filing_court_rule": "- Court process: Landlord files in district or municipal court; summons issued; hearing within days.",
+      "service_of_process_rule": "Okla. Stat. tit. 41, §§ 131–132"
+    },
+    "landlord_entry": {
+      "notice_rule": "reasonable",
+      "typical_notice_hours": null,
+      "advance_notice_required": true,
+      "emergency_entry_allowed": true,
+      "allowed_entry_reasons_rule": "- Entry for repairs: Landlord may enter to make repairs, deliver packages, or inspect the premises. - Entry to show: Landlord may enter to show premises to prospective tenants, buyers, or lenders.",
+      "entry_time_window_rule": "- Entry times: Entry should be at reasonable times, generally during normal business hours.",
+      "tenant_can_refuse_unreasonable_entry": true,
+      "penalty_for_illegal_entry_rule": "Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+    },
+    "rent_increase": {
+      "notice_days": null,
+      "cap_rule": "Statewide rent control applies (coverage varies).",
+      "statewide_rent_control": true,
+      "local_rent_control_allowed": "varies",
+      "fixed_term_increase_allowed_rule": "- Fixed-term leases: Rent cannot be increased during the lease term.",
+      "month_to_month_increase_allowed_rule": "- Rent increases: No statutory limit on amount or frequency for month-to-month tenancies.",
+      "just_cause_required_for_increase": false,
+      "delivery_method_rule": "- Notice required: For month-to-month tenancies, at least 30 days advance written notice.",
+      "retaliation_protection_note": "Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+    },
+    "habitability": {
+      "implied_warranty_of_habitability": true,
+      "landlord_repair_duty_rule": "- Landlord's duty: Comply with housing codes; keep premises in good repair; maintain structural, plumbing, heating, electrical systems; provide running water and hot water; provide garbage receptacles.",
+      "tenant_notice_required_rule": "- Tenant's remedies:",
+      "repair_and_deduct_allowed": true,
+      "rent_withholding_allowed": false,
+      "tenant_termination_for_unrepaired_conditions_rule": "3. Termination: Tenant may terminate the rental agreement if conditions substantially impair health and safety and landlord fails to repair within 14 days of notice.",
+      "retaliation_prohibited": true,
+      "code_enforcement_contact_rule": "Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+    }
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "Bootstrapped from app/data/state_laws.json",
+      "url": "app/data/state_laws.json"
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Maximum amount: NO STATUTORY LIMIT. Landlords may charge any amount as security deposit."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Return deadline: 45 days after tenancy ends."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.return_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Interest: No interest required to be paid to tenant on security deposits."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.interest_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Itemization required: Yes. Landlord must provide a written, itemized statement of deductions within 45 days."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Return deadline: 45 days after tenancy ends."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Permissible deductions: Unpaid rent, damage beyond normal wear and tear, other amounts owed under the lease."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.allowed_deductions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "Okla. Stat. tit. 41, § 115"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_receipt_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "Okla. Stat. tit. 41, § 115"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.move_in_checklist_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Penalty: If landlord fails to return the deposit within 45 days, tenant may recover actual damages and reasonable attorney's fees. Court may also award punitive damages in bad-faith cases."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.penalty_for_bad_faith_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "Okla. Stat. tit. 41, § 115"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.prepaid_rent_treatment_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "Okla. Stat. tit. 41, § 115"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.nonrefundable_fee_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "Okla. Stat. tit. 41, § 115"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.holding_deposit_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Separate account: Landlord is required to place the security deposit in a banking institution in Oklahoma, either in a separate account or by posting a surety bond."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_storage_segregation_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Transfer of ownership: New owner is responsible for the security deposit; 30 days notice of transfer required."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_transfer_on_sale_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 115",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "Okla. Stat. tit. 41, § 115"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.special_rules_local_overrides_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Nonpayment of rent: 5 days written notice to quit. If tenant pays all overdue rent within 5 days, tenancy is reinstated."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Other lease violations: 10 days written notice specifying the violation."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Month-to-month termination: 30 days written notice required."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.month_to_month_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Judicial eviction required: Yes. All evictions must go through the court system."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.judicial_process_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Self-help eviction prohibited: Landlords may NOT lock out, shut off utilities, or remove tenant's belongings without a court order."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.self_help_eviction_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Nonpayment of rent: 5 days written notice to quit. If tenant pays all overdue rent within 5 days, tenancy is reinstated."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Other lease violations: 10 days written notice specifying the violation."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Other lease violations: 10 days written notice specifying the violation."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_cure_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Month-to-month termination: 30 days written notice required."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.holdover_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Timeline: Uncontested cases approximately 2-4 weeks."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.timeline_estimate_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Court process: Landlord files in district or municipal court; summons issued; hearing within days."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.court_process_summary_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Court process: Landlord files in district or municipal court; summons issued; hearing within days."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.filing_court_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 131–132",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "Okla. Stat. tit. 41, §§ 131–132"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.service_of_process_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 122",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Reasonable notice required: Oklahoma law requires 'reasonable notice' before entry. No specific minimum hours mandated by statute."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.notice_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 122",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Reasonable notice required: Oklahoma law requires 'reasonable notice' before entry. No specific minimum hours mandated by statute."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.typical_notice_hours"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 122",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Reasonable notice required: Oklahoma law requires 'reasonable notice' before entry. No specific minimum hours mandated by statute."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.advance_notice_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 122",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Emergency entry: Landlord may enter without notice in case of emergency."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.emergency_entry_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 122",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Entry for repairs: Landlord may enter to make repairs, deliver packages, or inspect the premises. - Entry to show: Landlord may enter to show premises to prospective tenants, buyers, or lenders."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.allowed_entry_reasons_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 122",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Entry times: Entry should be at reasonable times, generally during normal business hours."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.entry_time_window_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 122",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Tenant's rights: Tenant may not unreasonably withhold consent to entry."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.tenant_can_refuse_unreasonable_entry"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, § 122",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "Okla. Stat. tit. 41, § 122"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.penalty_for_illegal_entry_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Notice required: For month-to-month tenancies, at least 30 days advance written notice."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Rent control: NO statewide rent control in Oklahoma."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Rent control: NO statewide rent control in Oklahoma."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.statewide_rent_control"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Rent control: NO statewide rent control in Oklahoma."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.local_rent_control_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Fixed-term leases: Rent cannot be increased during the lease term."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.fixed_term_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Rent increases: No statutory limit on amount or frequency for month-to-month tenancies."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.month_to_month_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Just cause: Not required for rent increases."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.just_cause_required_for_increase"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Notice required: For month-to-month tenancies, at least 30 days advance written notice."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.delivery_method_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "Okla. Stat. tit. 41"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.retaliation_protection_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 118–121",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Implied warranty of habitability: Oklahoma law imposes obligations on landlords to maintain habitable premises."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.implied_warranty_of_habitability"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 118–121",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Landlord's duty: Comply with housing codes; keep premises in good repair; maintain structural, plumbing, heating, electrical systems; provide running water and hot water; provide garbage receptacles."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.landlord_repair_duty_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 118–121",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Tenant's remedies:"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_notice_required_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 118–121",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "1. Repair and deduct: ALLOWED. Okla. Stat. tit. 41, § 121: After giving landlord 14 days written notice of needed repairs and landlord fails to repair within that time, tenant may have repairs made and deduct costs from rent."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.repair_and_deduct_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 118–121",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "2. Rent withholding: NOT ALLOWED."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.rent_withholding_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 118–121",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "3. Termination: Tenant may terminate the rental agreement if conditions substantially impair health and safety and landlord fails to repair within 14 days of notice."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_termination_for_unrepaired_conditions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 118–121",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "- Retaliatory eviction: PROHIBITED. Okla. Stat. tit. 41, § 127 prohibits retaliation against tenants who exercise their rights."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.retaliation_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Okla. Stat. tit. 41, §§ 118–121",
+      "url": "https://oklaw.org/resource/oklahoma-residential-landlord-and-tenand-act",
+      "extractedQuotes": [
+        "Okla. Stat. tit. 41, §§ 118–121"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.code_enforcement_contact_rule"
+      ]
+    }
+  ]
+}

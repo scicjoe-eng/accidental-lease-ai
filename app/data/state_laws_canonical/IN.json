@@ -1,0 +1,663 @@
+{
+  "state_code": "IN",
+  "state_name": "Indiana",
+  "state_slug": "indiana",
+  "last_verified_at": "2026-04-21",
+  "verified_by": "verify-and-fill-habitability-details",
+  "facts": {
+    "security_deposit": {
+      "cap_rule": "NO STATUTORY LIMIT",
+      "return_deadline_days": 45,
+      "interest_rule": "Varies — confirm current statute.",
+      "itemized_statement_required": true,
+      "itemized_statement_deadline_days": "varies",
+      "allowed_deductions_rule": "- Permissible deductions: Unpaid rent, damage beyond normal wear and tear, other amounts owed under the lease.",
+      "deposit_receipt_required": "varies",
+      "move_in_checklist_required": "varies",
+      "penalty_for_bad_faith_rule": "Varies — confirm current statute.",
+      "prepaid_rent_treatment_rule": "Varies — confirm current statute.",
+      "nonrefundable_fee_rule": "Varies — confirm current statute.",
+      "holding_deposit_rule": "Varies — confirm current statute.",
+      "deposit_storage_segregation_rule": "- Separate account: Landlord must either (1) deposit in a federally insured financial institution in Indiana, or (2) post a surety bond.",
+      "deposit_transfer_on_sale_rule": "Varies — confirm current statute.",
+      "special_rules_local_overrides_note": "Local ordinances and special housing programs can add stricter rules.",
+      "notes": []
+    },
+    "eviction": {
+      "nonpayment_notice_days": 10,
+      "lease_violation_notice_days": 10,
+      "month_to_month_notice_days": 10,
+      "judicial_process_required": true,
+      "self_help_eviction_prohibited": true,
+      "nonpayment_notice_type": "- Nonpayment of rent notice: 10 days written notice required before filing eviction. If tenant pays all rent due within 10 days, tenancy is reinstated.",
+      "lease_violation_notice_type": "- Lease violation: Landlord may provide notice specifying the violation and giving tenant 10-30 days to cure, depending on lease terms.",
+      "lease_violation_cure_allowed": "varies",
+      "holdover_notice_type": "- Month-to-month termination: 30 days written notice required.",
+      "timeline_estimate_rule": "- Timeline: Uncontested cases approximately 2-5 weeks.",
+      "court_process_summary_rule": "- Court process: Landlord files in small claims court (up to $6,000) or circuit/superior court; summons issued; hearing scheduled.",
+      "filing_court_rule": "- Court process: Landlord files in small claims court (up to $6,000) or circuit/superior court; summons issued; hearing scheduled.",
+      "service_of_process_rule": "Ind. Code §§ 32-31-5-1 to 32-31-5-12"
+    },
+    "landlord_entry": {
+      "notice_rule": "reasonable",
+      "typical_notice_hours": null,
+      "advance_notice_required": true,
+      "emergency_entry_allowed": true,
+      "allowed_entry_reasons_rule": "- Entry for repairs: Landlord may enter to make repairs or provide services. - Entry to show: Landlord may enter to show the premises to prospective tenants, buyers, or lenders.",
+      "entry_time_window_rule": "- Entry times: Should be at reasonable times during normal business hours.",
+      "tenant_can_refuse_unreasonable_entry": true,
+      "penalty_for_illegal_entry_rule": "Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+    },
+    "rent_increase": {
+      "notice_days": null,
+      "cap_rule": "Statewide rent control applies (coverage varies).",
+      "statewide_rent_control": true,
+      "local_rent_control_allowed": true,
+      "fixed_term_increase_allowed_rule": "- Fixed-term leases: Rent cannot be increased during the lease term unless the lease provides otherwise.",
+      "month_to_month_increase_allowed_rule": "- Rent increases: No statutory limit on amount or frequency for month-to-month tenancies.",
+      "just_cause_required_for_increase": false,
+      "delivery_method_rule": "- Notice required: For month-to-month tenancies, at least 30 days advance written notice of a rent increase.",
+      "retaliation_protection_note": "Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+    },
+    "habitability": {
+      "implied_warranty_of_habitability": true,
+      "landlord_repair_duty_rule": "- Landlord's duty: Comply with housing codes; make repairs; keep premises safe and sanitary; provide functioning heating, plumbing, electrical; supply hot water.",
+      "tenant_notice_required_rule": "- Tenant's remedies:",
+      "repair_and_deduct_allowed": false,
+      "rent_withholding_allowed": false,
+      "tenant_termination_for_unrepaired_conditions_rule": "5. Termination: In extreme cases of uninhabitability, tenant may terminate the lease.",
+      "retaliation_prohibited": true,
+      "code_enforcement_contact_rule": "Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+    }
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "Bootstrapped from app/data/state_laws.json",
+      "url": "app/data/state_laws.json"
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Maximum amount: NO STATUTORY LIMIT. Landlords may charge any amount as security deposit."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Return deadline: 45 days after tenancy ends."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.return_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Interest: No interest required to be paid to tenant on security deposits."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.interest_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Itemization required: Yes. Landlord must provide a written statement of deductions if any amount is withheld."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Return deadline: 45 days after tenancy ends."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Permissible deductions: Unpaid rent, damage beyond normal wear and tear, other amounts owed under the lease."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.allowed_deductions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code §§ 32-31-3-1 to 32-31-3-18"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_receipt_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code §§ 32-31-3-1 to 32-31-3-18"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.move_in_checklist_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code §§ 32-31-3-1 to 32-31-3-18"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.penalty_for_bad_faith_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code §§ 32-31-3-1 to 32-31-3-18"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.prepaid_rent_treatment_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code §§ 32-31-3-1 to 32-31-3-18"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.nonrefundable_fee_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code §§ 32-31-3-1 to 32-31-3-18"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.holding_deposit_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Separate account: Landlord must either (1) deposit in a federally insured financial institution in Indiana, or (2) post a surety bond."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_storage_segregation_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code §§ 32-31-3-1 to 32-31-3-18"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_transfer_on_sale_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-3-1 to 32-31-3-18",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code §§ 32-31-3-1 to 32-31-3-18"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.special_rules_local_overrides_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Nonpayment of rent notice: 10 days written notice required before filing eviction. If tenant pays all rent due within 10 days, tenancy is reinstated."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Lease violation: Landlord may provide notice specifying the violation and giving tenant 10-30 days to cure, depending on lease terms."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Month-to-month termination: 30 days written notice required."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.month_to_month_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Judicial eviction required: Yes. All evictions must go through court."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.judicial_process_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Self-help eviction prohibited: Landlords may NOT lock out tenants, remove belongings, or shut off utilities without a court order."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.self_help_eviction_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Nonpayment of rent notice: 10 days written notice required before filing eviction. If tenant pays all rent due within 10 days, tenancy is reinstated."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Lease violation: Landlord may provide notice specifying the violation and giving tenant 10-30 days to cure, depending on lease terms."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Lease violation: Landlord may provide notice specifying the violation and giving tenant 10-30 days to cure, depending on lease terms."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_cure_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Month-to-month termination: 30 days written notice required."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.holdover_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Timeline: Uncontested cases approximately 2-5 weeks."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.timeline_estimate_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Court process: Landlord files in small claims court (up to $6,000) or circuit/superior court; summons issued; hearing scheduled."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.court_process_summary_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Court process: Landlord files in small claims court (up to $6,000) or circuit/superior court; summons issued; hearing scheduled."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.filing_court_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-5-1 to 32-31-5-12",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code §§ 32-31-5-1 to 32-31-5-12"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.service_of_process_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-4",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Reasonable notice required: Indiana law requires 'reasonable notice' but does not specify a minimum time period."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.notice_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-4",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Reasonable notice required: Indiana law requires 'reasonable notice' but does not specify a minimum time period."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.typical_notice_hours"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-4",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Reasonable notice required: Indiana law requires 'reasonable notice' but does not specify a minimum time period."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.advance_notice_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-4",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Emergency entry: Landlord may enter without notice in case of emergency."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.emergency_entry_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-4",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Entry for repairs: Landlord may enter to make repairs or provide services. - Entry to show: Landlord may enter to show the premises to prospective tenants, buyers, or lenders."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.allowed_entry_reasons_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-4",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Entry times: Should be at reasonable times during normal business hours."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.entry_time_window_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-4",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Tenant's rights: Tenant may not unreasonably withhold consent to entry."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.tenant_can_refuse_unreasonable_entry"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-4",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code § 32-31-4-4"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.penalty_for_illegal_entry_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-3",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Notice required: For month-to-month tenancies, at least 30 days advance written notice of a rent increase."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-3",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Rent control: NO statewide rent control in Indiana."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-3",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Rent control: NO statewide rent control in Indiana."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.statewide_rent_control"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-3",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Rent control: NO statewide rent control in Indiana."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.local_rent_control_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-3",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Fixed-term leases: Rent cannot be increased during the lease term unless the lease provides otherwise."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.fixed_term_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-3",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Rent increases: No statutory limit on amount or frequency for month-to-month tenancies."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.month_to_month_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-3",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Just cause: Not required for rent increases."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.just_cause_required_for_increase"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-3",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Notice required: For month-to-month tenancies, at least 30 days advance written notice of a rent increase."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.delivery_method_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code § 32-31-4-3",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code § 32-31-4-3"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.retaliation_protection_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-4-1 to 32-31-4-10",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Implied warranty of habitability: Indiana landlords have an obligation to maintain fit and habitable premises."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.implied_warranty_of_habitability"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-4-1 to 32-31-4-10",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Landlord's duty: Comply with housing codes; make repairs; keep premises safe and sanitary; provide functioning heating, plumbing, electrical; supply hot water."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.landlord_repair_duty_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-4-1 to 32-31-4-10",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Tenant's remedies:"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_notice_required_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-4-1 to 32-31-4-10",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "1. Repair and deduct: NOT ALLOWED under Indiana law."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.repair_and_deduct_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-4-1 to 32-31-4-10",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "2. Rent withholding: NOT ALLOWED. Tenant cannot unilaterally withhold rent."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.rent_withholding_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-4-1 to 32-31-4-10",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "5. Termination: In extreme cases of uninhabitability, tenant may terminate the lease."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_termination_for_unrepaired_conditions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-4-1 to 32-31-4-10",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "- Retaliatory eviction: PROHIBITED. Ind. Code § 32-31-9-5 prohibits landlords from evicting in retaliation for tenant's complaints to government agencies or exercise of rights."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.retaliation_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Ind. Code §§ 32-31-4-1 to 32-31-4-10",
+      "url": "https://www.law.cornell.edu/states/indiana",
+      "extractedQuotes": [
+        "Ind. Code §§ 32-31-4-1 to 32-31-4-10"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.code_enforcement_contact_rule"
+      ]
+    }
+  ]
+}

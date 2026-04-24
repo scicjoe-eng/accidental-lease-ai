@@ -1,0 +1,663 @@
+{
+  "state_code": "WI",
+  "state_name": "Wisconsin",
+  "state_slug": "wisconsin",
+  "last_verified_at": "2026-04-21",
+  "verified_by": "verify-and-fill-habitability-details",
+  "facts": {
+    "security_deposit": {
+      "cap_rule": "NO STATUTORY LIMIT",
+      "return_deadline_days": 21,
+      "interest_rule": "Varies — confirm current statute.",
+      "itemized_statement_required": true,
+      "itemized_statement_deadline_days": "varies",
+      "allowed_deductions_rule": "- Permissible deductions: Unpaid rent, damage beyond normal wear and tear, amounts owed under the lease.",
+      "deposit_receipt_required": "varies",
+      "move_in_checklist_required": "varies",
+      "penalty_for_bad_faith_rule": "Varies — confirm current statute.",
+      "prepaid_rent_treatment_rule": "Varies — confirm current statute.",
+      "nonrefundable_fee_rule": "Varies — confirm current statute.",
+      "holding_deposit_rule": "Varies — confirm current statute.",
+      "deposit_storage_segregation_rule": "- Separate account: Not required by state law (but see local ordinances).",
+      "deposit_transfer_on_sale_rule": "Varies — confirm current statute.",
+      "special_rules_local_overrides_note": "Local ordinances and special housing programs can add stricter rules.",
+      "notes": []
+    },
+    "eviction": {
+      "nonpayment_notice_days": 5,
+      "lease_violation_notice_days": 5,
+      "month_to_month_notice_days": 5,
+      "judicial_process_required": true,
+      "self_help_eviction_prohibited": true,
+      "nonpayment_notice_type": "- Nonpayment of rent notice: 5 days written notice (with opportunity to cure for first violation in a rental period).",
+      "lease_violation_notice_type": "- Lease violation notice: 14 days written notice with 14-day right to cure.",
+      "lease_violation_cure_allowed": "varies",
+      "holdover_notice_type": "- Month-to-month termination: 28 days written notice required.",
+      "timeline_estimate_rule": "- Timeline: Uncontested eviction takes approximately 3-6 weeks from filing to judgment.",
+      "court_process_summary_rule": "- Court process: Landlord files in circuit court; tenant is served with summons and complaint; tenant has right to appear and defend.",
+      "filing_court_rule": "- Court process: Landlord files in circuit court; tenant is served with summons and complaint; tenant has right to appear and defend.",
+      "service_of_process_rule": "- Court process: Landlord files in circuit court; tenant is served with summons and complaint; tenant has right to appear and defend."
+    },
+    "landlord_entry": {
+      "notice_rule": "reasonable",
+      "typical_notice_hours": null,
+      "advance_notice_required": true,
+      "emergency_entry_allowed": true,
+      "allowed_entry_reasons_rule": "- Entry for repairs: Landlord may enter to make repairs, inspections, or to show the premises. - Entry for repairs: Landlord may enter to make repairs, inspections, or to show the premises.",
+      "entry_time_window_rule": "- Reasonable times: Entry should be during normal business hours or reasonable hours.",
+      "tenant_can_refuse_unreasonable_entry": "varies",
+      "penalty_for_illegal_entry_rule": "Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+    },
+    "rent_increase": {
+      "notice_days": null,
+      "cap_rule": "No statewide rent control; local rules may apply.",
+      "statewide_rent_control": "varies",
+      "local_rent_control_allowed": "varies",
+      "fixed_term_increase_allowed_rule": "- Fixed-term leases: Rent cannot be increased during the lease term unless the lease specifically allows it.",
+      "month_to_month_increase_allowed_rule": "- Rent increases: No statutory limit on amount or frequency for month-to-month tenancies.",
+      "just_cause_required_for_increase": false,
+      "delivery_method_rule": "- Notice required: For month-to-month tenancies, at least 28 days advance written notice of a rent increase.",
+      "retaliation_protection_note": "Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+    },
+    "habitability": {
+      "implied_warranty_of_habitability": true,
+      "landlord_repair_duty_rule": "- Landlord's duty: To keep premises in a fit and habitable condition, comply with applicable building and housing codes, make repairs, keep common areas clean and safe, maintain essential services.",
+      "tenant_notice_required_rule": "Varies — confirm required notice/cure steps before remedies.",
+      "repair_and_deduct_allowed": true,
+      "rent_withholding_allowed": false,
+      "tenant_termination_for_unrepaired_conditions_rule": "Varies — some states allow termination after notice and failure to repair.",
+      "retaliation_prohibited": true,
+      "code_enforcement_contact_rule": "Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+    }
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "Bootstrapped from app/data/state_laws.json",
+      "url": "app/data/state_laws.json"
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Maximum amount: NO STATUTORY LIMIT. Landlords may charge any amount."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Return deadline: 21 days after tenancy ends."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.return_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Interest: Varies — confirm current statute."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.interest_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Itemization required: Landlord must provide an itemized list of deductions."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Return deadline: 21 days after tenancy ends."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Permissible deductions: Unpaid rent, damage beyond normal wear and tear, amounts owed under the lease."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.allowed_deductions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.05; ATCP 134.01–134.09"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_receipt_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.05; ATCP 134.01–134.09"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.move_in_checklist_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.05; ATCP 134.01–134.09"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.penalty_for_bad_faith_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.05; ATCP 134.01–134.09"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.prepaid_rent_treatment_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.05; ATCP 134.01–134.09"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.nonrefundable_fee_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.05; ATCP 134.01–134.09"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.holding_deposit_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Separate account: Not required by state law (but see local ordinances)."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_storage_segregation_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.05; ATCP 134.01–134.09"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_transfer_on_sale_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.05; ATCP 134.01–134.09",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.05; ATCP 134.01–134.09"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.special_rules_local_overrides_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Nonpayment of rent notice: 5 days written notice (with opportunity to cure for first violation in a rental period)."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Lease violation notice: 14 days written notice with 14-day right to cure."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Month-to-month termination: 28 days written notice required."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.month_to_month_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Judicial eviction required: Yes. All evictions must go through court."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.judicial_process_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Self-help eviction prohibited: Landlords may NOT lock out tenants, shut off utilities, or remove tenant's belongings without a court order."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.self_help_eviction_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Nonpayment of rent notice: 5 days written notice (with opportunity to cure for first violation in a rental period)."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Lease violation notice: 14 days written notice with 14-day right to cure."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Lease violation notice: 14 days written notice with 14-day right to cure."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_cure_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Month-to-month termination: 28 days written notice required."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.holdover_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Timeline: Uncontested eviction takes approximately 3-6 weeks from filing to judgment."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.timeline_estimate_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Court process: Landlord files in circuit court; tenant is served with summons and complaint; tenant has right to appear and defend."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.court_process_summary_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Court process: Landlord files in circuit court; tenant is served with summons and complaint; tenant has right to appear and defend."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.filing_court_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. §§ 799.40–799.45; Ch. 704",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Court process: Landlord files in circuit court; tenant is served with summons and complaint; tenant has right to appear and defend."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.service_of_process_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.14",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Reasonable notice required: Generally 12 hours to 24 hours advance notice is considered reasonable."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.notice_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.14",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Reasonable notice required: Generally 12 hours to 24 hours advance notice is considered reasonable."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.typical_notice_hours"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.14",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Reasonable notice required: Generally 12 hours to 24 hours advance notice is considered reasonable."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.advance_notice_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.14",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Emergency entry: Landlord may enter without notice in case of emergency."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.emergency_entry_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.14",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Entry for repairs: Landlord may enter to make repairs, inspections, or to show the premises. - Entry for repairs: Landlord may enter to make repairs, inspections, or to show the premises."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.allowed_entry_reasons_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.14",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Reasonable times: Entry should be during normal business hours or reasonable hours."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.entry_time_window_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.14",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.14"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.tenant_can_refuse_unreasonable_entry"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.14",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.14"
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.penalty_for_illegal_entry_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Notice required: For month-to-month tenancies, at least 28 days advance written notice of a rent increase."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Rent control: PROHIBITED statewide. Wis. Stat. § 66.1015 prohibits any municipality from enacting rent control."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Rent control: PROHIBITED statewide. Wis. Stat. § 66.1015 prohibits any municipality from enacting rent control."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.statewide_rent_control"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Rent control: PROHIBITED statewide. Wis. Stat. § 66.1015 prohibits any municipality from enacting rent control."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.local_rent_control_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Fixed-term leases: Rent cannot be increased during the lease term unless the lease specifically allows it."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.fixed_term_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Rent increases: No statutory limit on amount or frequency for month-to-month tenancies."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.month_to_month_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Just cause: Not required for rent increases in Wisconsin."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.just_cause_required_for_increase"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Notice required: For month-to-month tenancies, at least 28 days advance written notice of a rent increase."
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.delivery_method_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 66.1015"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.retaliation_protection_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.07; Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Implied warranty of habitability: Wisconsin recognizes a duty of landlords to maintain fit premises."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.implied_warranty_of_habitability"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.07; Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Landlord's duty: To keep premises in a fit and habitable condition, comply with applicable building and housing codes, make repairs, keep common areas clean and safe, maintain essential services."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.landlord_repair_duty_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.07; Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.07; Wis. Stat. § 66.1015"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_notice_required_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.07; Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Repair and deduct: ALLOWED. Wis. Stat. § 704.07(2): If landlord fails to repair conditions that substantially affect health or safety after notice, tenant may have repairs made and deduct cost from rent (reasonable amount, not exceeding $300 or one month's rent, whichever is greater)."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.repair_and_deduct_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.07; Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Rent withholding: NOT ALLOWED. Tenant may not unilaterally withhold rent for habitability issues."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.rent_withholding_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.07; Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.07; Wis. Stat. § 66.1015"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_termination_for_unrepaired_conditions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.07; Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "- Retaliatory eviction: PROHIBITED. Wis. Stat. § 704.45. A landlord may not evict a tenant because the tenant has complained to a government agency or exercised rights under the rental agreement."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.retaliation_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Wis. Stat. § 704.07; Wis. Stat. § 66.1015",
+      "url": "https://www.law.cornell.edu/states/wisconsin",
+      "extractedQuotes": [
+        "Wis. Stat. § 704.07; Wis. Stat. § 66.1015"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.code_enforcement_contact_rule"
+      ]
+    }
+  ]
+}

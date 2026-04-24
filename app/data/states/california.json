@@ -1,0 +1,102 @@
+{
+  "stateSlug": "california",
+  "stateName": "California",
+  "year": 2026,
+  "titleTag": "California Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "California landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "California Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for California security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: 2 months' rent",
+        "Return deadline: 21 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: Varies — confirm current statute.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Varies — confirm current statute."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For California eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: varies — confirm current statute and required notice form.",
+        "Nonpayment notice type: Varies — confirm required notice form (pay-or-quit, demand for possession, etc.).",
+        "Lease violation notice: varies — confirm cure rights and timelines.",
+        "Lease violation notice type: Varies — confirm notice type and cure rules.",
+        "Cure allowed: varies",
+        "Month-to-month termination: varies by tenancy type and local rules.",
+        "Holdover/termination notice type: Varies — confirm termination/holdover notice rules.",
+        "Court process: confirm whether judicial eviction is required (most states prohibit self-help).",
+        "Self-help eviction: varies — confirm current statute and case law.",
+        "Timeline: ",
+        "Court steps: Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for California landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: (2) To make necessary or agreed repairs, decorations, alterations or improvements, supply necessary or agreed services, or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers, or contractors or to make an inspection pursuant to subdivision (f) of Section 1950.5. (2) To make necessary or agreed repairs, decorations, alterations or improvements, supply necessary or agreed services, or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers, or contractors or to make an inspection pursuant to subdivision (f) of Section 1950.5.",
+        "Timing: Varies — usually at reasonable times.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: varies",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For California rent increase rules, you need to check both (1) notice requirements and (2) whether your unit is covered by statewide or local rent caps."
+      ],
+      "bullets": [
+        "Statewide rent control: typically none, but local/covered-housing rules may apply.",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: varies — confirm current statute and any local ordinances.",
+        "Fixed-term leases: Varies — confirm your lease terms and statute.",
+        "Month-to-month: Varies — generally allowed with proper notice.",
+        "Delivery: Varies — confirm written notice and delivery method requirements.",
+        "Just cause: varies",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most California landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: varies — confirm current law",
+        "Landlord repair duty: Varies — confirm landlord repair/habitability duties in statute and local code.",
+        "Tenant notice: Varies — confirm required notice/cure steps before remedies.",
+        "Repair-and-deduct: varies",
+        "Rent withholding: varies",
+        "Termination: Varies — some states allow termination after notice and failure to repair.",
+        "Retaliation: varies",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page summarizes common statewide rules; local ordinances and property-specific exemptions can change the outcome."
+  ]
+}

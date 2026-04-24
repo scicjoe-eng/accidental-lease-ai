@@ -1,0 +1,663 @@
+{
+  "state_code": "CA",
+  "state_name": "California",
+  "state_slug": "california",
+  "last_verified_at": "2026-04-21",
+  "verified_by": "verify-and-fill-habitability-details",
+  "facts": {
+    "security_deposit": {
+      "cap_rule": "2 months' rent",
+      "return_deadline_days": 21,
+      "interest_rule": "Varies — confirm current statute.",
+      "itemized_statement_required": true,
+      "itemized_statement_deadline_days": "varies",
+      "allowed_deductions_rule": "Varies — confirm current statute.",
+      "deposit_receipt_required": "varies",
+      "move_in_checklist_required": "varies",
+      "penalty_for_bad_faith_rule": "Varies — confirm current statute.",
+      "prepaid_rent_treatment_rule": "Varies — confirm current statute.",
+      "nonrefundable_fee_rule": "Varies — confirm current statute.",
+      "holding_deposit_rule": "Varies — confirm current statute.",
+      "deposit_storage_segregation_rule": "Varies — confirm current statute.",
+      "deposit_transfer_on_sale_rule": "Varies — confirm current statute.",
+      "special_rules_local_overrides_note": "Local ordinances and special housing programs can add stricter rules.",
+      "notes": []
+    },
+    "eviction": {
+      "nonpayment_notice_days": null,
+      "lease_violation_notice_days": null,
+      "month_to_month_notice_days": null,
+      "judicial_process_required": false,
+      "self_help_eviction_prohibited": "varies",
+      "nonpayment_notice_type": "Varies — confirm required notice form (pay-or-quit, demand for possession, etc.).",
+      "lease_violation_notice_type": "Varies — confirm notice type and cure rules.",
+      "lease_violation_cure_allowed": "varies",
+      "holdover_notice_type": "Varies — confirm termination/holdover notice rules.",
+      "timeline_estimate_rule": "",
+      "court_process_summary_rule": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "filing_court_rule": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "service_of_process_rule": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+    },
+    "landlord_entry": {
+      "notice_rule": "reasonable",
+      "typical_notice_hours": null,
+      "advance_notice_required": false,
+      "emergency_entry_allowed": true,
+      "allowed_entry_reasons_rule": "(2) To make necessary or agreed repairs, decorations, alterations or improvements, supply necessary or agreed services, or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers, or contractors or to make an inspection pursuant to subdivision (f) of Section 1950.5. (2) To make necessary or agreed repairs, decorations, alterations or improvements, supply necessary or agreed services, or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers, or contractors or to make an inspection pursuant to subdivision (f) of Section 1950.5.",
+      "entry_time_window_rule": "Varies — usually at reasonable times.",
+      "tenant_can_refuse_unreasonable_entry": "varies",
+      "penalty_for_illegal_entry_rule": "Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+    },
+    "rent_increase": {
+      "notice_days": null,
+      "cap_rule": "No statewide rent control; local rules may apply.",
+      "statewide_rent_control": "varies",
+      "local_rent_control_allowed": "varies",
+      "fixed_term_increase_allowed_rule": "Varies — confirm your lease terms and statute.",
+      "month_to_month_increase_allowed_rule": "Varies — generally allowed with proper notice.",
+      "just_cause_required_for_increase": "varies",
+      "delivery_method_rule": "Varies — confirm written notice and delivery method requirements.",
+      "retaliation_protection_note": "Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+    },
+    "habitability": {
+      "implied_warranty_of_habitability": "varies",
+      "landlord_repair_duty_rule": "Varies — confirm landlord repair/habitability duties in statute and local code.",
+      "tenant_notice_required_rule": "Varies — confirm required notice/cure steps before remedies.",
+      "repair_and_deduct_allowed": "varies",
+      "rent_withholding_allowed": "varies",
+      "tenant_termination_for_unrepaired_conditions_rule": "Varies — some states allow termination after notice and failure to repair.",
+      "retaliation_prohibited": "varies",
+      "code_enforcement_contact_rule": "Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+    }
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "Bootstrapped from app/data/state_laws.json",
+      "url": "app/data/state_laws.json"
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Maximum amount: 2 months' rent"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Return deadline: 21 days"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.return_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Interest: Varies — confirm current statute."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.interest_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Return deadline: 21 days"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.allowed_deductions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_receipt_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.move_in_checklist_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.penalty_for_bad_faith_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.prepaid_rent_treatment_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.nonrefundable_fee_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.holding_deposit_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_storage_segregation_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_transfer_on_sale_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1950.5. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1950.5. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.special_rules_local_overrides_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.month_to_month_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.judicial_process_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.self_help_eviction_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_cure_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.holdover_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        ""
+      ],
+      "appliesToFacts": [
+        "facts.eviction.timeline_estimate_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.court_process_summary_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.filing_court_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1946. MONTH-TO-MONTH TERMINATION. A hiring of real property, for a term not specified by the parties, is deemed to be renewed as stated in Section 1945, at the end of the term implied by law unless one of the parties gives written notice to the other of that party's intention to terminate the same, at least as long before the expiration thereof as the term of the hiring itself, not exceeding 30 days; provided, however, that as to tenancies from month-to-month either of the parties may terminate the same by giving at least 30 days' written notice thereof at any time and the rent shall be due and payable to and including the date of termination. [30-day notice for tenancies <1 year; 60-day notice for tenancies ≥1 year per §1946.1]"
+      ],
+      "appliesToFacts": [
+        "facts.eviction.service_of_process_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "(d)(1) Except as provided in subdivision (e), or as provided in paragraph (2) or (3), the landlord shall give the tenant reasonable notice in writing before entering and shall enter only during normal business hours. Twenty-four hours shall be presumed to be reasonable notice in absence of evidence to the contrary. The notice shall include the date, approximate time, and purpose of the entry."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.notice_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "(d)(1) Except as provided in subdivision (e), or as provided in paragraph (2) or (3), the landlord shall give the tenant reasonable notice in writing before entering and shall enter only during normal business hours. Twenty-four hours shall be presumed to be reasonable notice in absence of evidence to the contrary. The notice shall include the date, approximate time, and purpose of the entry."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.typical_notice_hours"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "(d)(1) Except as provided in subdivision (e), or as provided in paragraph (2) or (3), the landlord shall give the tenant reasonable notice in writing before entering and shall enter only during normal business hours. Twenty-four hours shall be presumed to be reasonable notice in absence of evidence to the contrary. The notice shall include the date, approximate time, and purpose of the entry."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.advance_notice_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "(1) In case of emergency."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.emergency_entry_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "(2) To make necessary or agreed repairs, decorations, alterations or improvements, supply necessary or agreed services, or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers, or contractors or to make an inspection pursuant to subdivision (f) of Section 1950.5. (2) To make necessary or agreed repairs, decorations, alterations or improvements, supply necessary or agreed services, or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers, or contractors or to make an inspection pursuant to subdivision (f) of Section 1950.5."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.allowed_entry_reasons_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.entry_time_window_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.tenant_can_refuse_unreasonable_entry"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1954. WHEN LANDLORD MAY ENTER DWELLING UNIT."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.penalty_for_illegal_entry_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "California rent increase",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "California rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "California rent increase",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "California rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "California rent increase",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "California rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.statewide_rent_control"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "California rent increase",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "California rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.local_rent_control_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "California rent increase",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "California rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.fixed_term_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "California rent increase",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "California rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.month_to_month_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "California rent increase",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "California rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.just_cause_required_for_increase"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "California rent increase",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "California rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.delivery_method_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "California rent increase",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "California rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.retaliation_protection_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.implied_warranty_of_habitability"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.landlord_repair_duty_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_notice_required_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.repair_and_deduct_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.rent_withholding_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_termination_for_unrepaired_conditions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.retaliation_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929.",
+      "url": "https://www.law.cornell.edu/states/california",
+      "extractedQuotes": [
+        "Cal. Civil Code § 1941. LESSOR TO MAINTAIN PREMISES. The lessor of a building intended for the occupation of human beings must, in the absence of an agreement to the contrary, put it into a condition fit for such occupation, and repair all subsequent dilapidations thereof, which render it untenantable, except such as are mentioned in Section 1929."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.code_enforcement_contact_rule"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "stateSlug": "indiana",
+  "stateName": "Indiana",
+  "year": 2026,
+  "titleTag": "Indiana Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Indiana landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Indiana Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Indiana security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: NO STATUTORY LIMIT",
+        "Return deadline: 45 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: - Permissible deductions: Unpaid rent, damage beyond normal wear and tear, other amounts owed under the lease.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Varies — confirm current statute."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Indiana eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: commonly 10 days (verify by tenancy type/notice form).",
+        "Nonpayment notice type: - Nonpayment of rent notice: 10 days written notice required before filing eviction. If tenant pays all rent due within 10 days, tenancy is reinstated.",
+        "Lease violation notice: commonly 10 days (may allow cure).",
+        "Lease violation notice type: - Lease violation: Landlord may provide notice specifying the violation and giving tenant 10-30 days to cure, depending on lease terms.",
+        "Cure allowed: varies",
+        "Month-to-month termination: commonly 10 days (verify tenancy type).",
+        "Holdover/termination notice type: - Month-to-month termination: 30 days written notice required.",
+        "Court process: judicial eviction required (no self-help).",
+        "Self-help eviction: prohibited (generally requires a court order).",
+        "Timeline: - Timeline: Uncontested cases approximately 2-5 weeks.",
+        "Court steps: - Court process: Landlord files in small claims court (up to $6,000) or circuit/superior court; summons issued; hearing scheduled."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Indiana landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: - Entry for repairs: Landlord may enter to make repairs or provide services. - Entry to show: Landlord may enter to show the premises to prospective tenants, buyers, or lenders.",
+        "Timing: - Entry times: Should be at reasonable times during normal business hours.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: tenant cannot unreasonably withhold consent",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Indiana rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: exists (coverage and cap formulas vary).",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: varies — confirm current statute and any local ordinances.",
+        "Fixed-term leases: - Fixed-term leases: Rent cannot be increased during the lease term unless the lease provides otherwise.",
+        "Month-to-month: - Rent increases: No statutory limit on amount or frequency for month-to-month tenancies.",
+        "Delivery: - Notice required: For month-to-month tenancies, at least 30 days advance written notice of a rent increase.",
+        "Just cause: not required",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Indiana landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: implied warranty generally applies",
+        "Landlord repair duty: - Landlord's duty: Comply with housing codes; make repairs; keep premises safe and sanitary; provide functioning heating, plumbing, electrical; supply hot water.",
+        "Tenant notice: - Tenant's remedies:",
+        "Repair-and-deduct: not allowed / very limited",
+        "Rent withholding: not allowed / very limited",
+        "Termination: 5. Termination: In extreme cases of uninhabitability, tenant may terminate the lease.",
+        "Retaliation: retaliation is prohibited",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "stateSlug": "arizona",
+  "stateName": "Arizona",
+  "year": 2026,
+  "titleTag": "Arizona Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Arizona landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Arizona Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Arizona security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: 1.5 months' rent",
+        "Return deadline: 14 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: Varies — confirm current statute.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Not required"
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Arizona eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: commonly 5 days (verify by tenancy type/notice form).",
+        "Nonpayment notice type: (C) If rent is unpaid when due and the tenant fails to pay within five (5) days after written notice by the landlord of nonpayment and intent to terminate, the landlord may terminate the rental agreement.",
+        "Lease violation notice: varies — confirm cure rights and timelines.",
+        "Lease violation notice type: (A) Except as provided in subsection (C) of this section, if there is a material noncompliance by the tenant with the rental agreement, the landlord may deliver a written notice to the tenant specifying the acts and omissions constituting the breach and that the rental agreement will terminate upon a date not less than ten (10) days after receipt of the notice if the breach is not remedied.",
+        "Cure allowed: varies",
+        "Month-to-month termination: commonly 30 days (verify tenancy type).",
+        "Holdover/termination notice type: A.R.S. § 33-1375. PERIODIC TENANCY; HOLDOVER REMEDIES.",
+        "Court process: confirm whether judicial eviction is required (most states prohibit self-help).",
+        "Self-help eviction: varies — confirm current statute and case law.",
+        "Timeline: ",
+        "Court steps: A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Arizona landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: A. The tenant shall not unreasonably withhold consent to the landlord to enter into the dwelling unit in order to inspect the premises; make necessary or agreed repairs, decorations, alterations or improvements; supply necessary or agreed services; or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers or contractors. A. The tenant shall not unreasonably withhold consent to the landlord to enter into the dwelling unit in order to inspect the premises; make necessary or agreed repairs, decorations, alterations or improvements; supply necessary or agreed services; or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers or contractors.",
+        "Timing: D. The landlord shall not abuse the right of access or use it to harass the tenant. Except in case of emergency, or as impracticable, the landlord shall give the tenant at least TWO (2) days' notice of the landlord's intent to enter and may enter only at reasonable times.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: tenant cannot unreasonably withhold consent",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Arizona rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: typically none, but local/covered-housing rules may apply.",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: commonly 30 days' written notice for month-to-month tenancies.",
+        "Fixed-term leases: Varies — confirm your lease terms and statute.",
+        "Month-to-month: Varies — generally allowed with proper notice.",
+        "Delivery: Varies — confirm written notice and delivery method requirements.",
+        "Just cause: varies",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Arizona landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: implied warranty generally applies",
+        "Landlord repair duty: 1. Comply with requirements of applicable building codes materially affecting health and safety;",
+        "Tenant notice: Varies — confirm required notice/cure steps before remedies.",
+        "Repair-and-deduct: varies",
+        "Rent withholding: varies",
+        "Termination: Varies — some states allow termination after notice and failure to repair.",
+        "Retaliation: varies",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}

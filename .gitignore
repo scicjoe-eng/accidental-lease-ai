@@ -17,6 +17,12 @@
 /.next/
 /out/
 
+# PWA (from @ducanh2912/next-pwa + `npm run build --webpack`)
+public/sw.js
+public/workbox-*.js
+public/fallback-*.js
+public/swe-worker-*.js
+
 # production
 /build
 

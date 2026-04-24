@@ -1,0 +1,663 @@
+{
+  "state_code": "AZ",
+  "state_name": "Arizona",
+  "state_slug": "arizona",
+  "last_verified_at": "2026-04-21",
+  "verified_by": "verify-and-fill-habitability-details",
+  "facts": {
+    "security_deposit": {
+      "cap_rule": "1.5 months' rent",
+      "return_deadline_days": 14,
+      "interest_rule": "Not required",
+      "itemized_statement_required": true,
+      "itemized_statement_deadline_days": "varies",
+      "allowed_deductions_rule": "Varies — confirm current statute.",
+      "deposit_receipt_required": "varies",
+      "move_in_checklist_required": true,
+      "penalty_for_bad_faith_rule": "Varies — confirm current statute.",
+      "prepaid_rent_treatment_rule": "D. Upon termination of the tenancy, the landlord may apply the security deposit and prepaid rent against: (1) all rent due; and (2) all costs, damages and fees as specified in the signed lease or this chapter, including damages for tenant's noncompliance per §33-1341. Within 14 business days (excluding Saturday, Sunday, and legal holidays) after the tenant has vacated, the landlord shall provide an itemized list of all deductions from the deposit together with any remaining balance due to the tenant. [Mailed to tenant's last known address.] If the tenant does not dispute the itemization within 60 days, the amounts are final.",
+      "nonrefundable_fee_rule": "B. All nonrefundable fees or deposits shall be stated as such and the purpose shall be stated in writing by the landlord. Any fees or deposits not designated as nonrefundable shall be refundable.",
+      "holding_deposit_rule": "Varies — confirm current statute.",
+      "deposit_storage_segregation_rule": "Varies — confirm current statute.",
+      "deposit_transfer_on_sale_rule": "Varies — confirm current statute.",
+      "special_rules_local_overrides_note": "Local ordinances and special housing programs can add stricter rules.",
+      "notes": []
+    },
+    "eviction": {
+      "nonpayment_notice_days": 5,
+      "lease_violation_notice_days": null,
+      "month_to_month_notice_days": 30,
+      "judicial_process_required": false,
+      "self_help_eviction_prohibited": "varies",
+      "nonpayment_notice_type": "(C) If rent is unpaid when due and the tenant fails to pay within five (5) days after written notice by the landlord of nonpayment and intent to terminate, the landlord may terminate the rental agreement.",
+      "lease_violation_notice_type": "(A) Except as provided in subsection (C) of this section, if there is a material noncompliance by the tenant with the rental agreement, the landlord may deliver a written notice to the tenant specifying the acts and omissions constituting the breach and that the rental agreement will terminate upon a date not less than ten (10) days after receipt of the notice if the breach is not remedied.",
+      "lease_violation_cure_allowed": "varies",
+      "holdover_notice_type": "A.R.S. § 33-1375. PERIODIC TENANCY; HOLDOVER REMEDIES.",
+      "timeline_estimate_rule": "",
+      "court_process_summary_rule": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "filing_court_rule": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "service_of_process_rule": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT."
+    },
+    "landlord_entry": {
+      "notice_rule": "varies",
+      "typical_notice_hours": null,
+      "advance_notice_required": true,
+      "emergency_entry_allowed": true,
+      "allowed_entry_reasons_rule": "A. The tenant shall not unreasonably withhold consent to the landlord to enter into the dwelling unit in order to inspect the premises; make necessary or agreed repairs, decorations, alterations or improvements; supply necessary or agreed services; or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers or contractors. A. The tenant shall not unreasonably withhold consent to the landlord to enter into the dwelling unit in order to inspect the premises; make necessary or agreed repairs, decorations, alterations or improvements; supply necessary or agreed services; or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers or contractors.",
+      "entry_time_window_rule": "D. The landlord shall not abuse the right of access or use it to harass the tenant. Except in case of emergency, or as impracticable, the landlord shall give the tenant at least TWO (2) days' notice of the landlord's intent to enter and may enter only at reasonable times.",
+      "tenant_can_refuse_unreasonable_entry": true,
+      "penalty_for_illegal_entry_rule": "Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+    },
+    "rent_increase": {
+      "notice_days": 30,
+      "cap_rule": "No statewide rent control; local rules may apply.",
+      "statewide_rent_control": false,
+      "local_rent_control_allowed": false,
+      "fixed_term_increase_allowed_rule": "Varies — confirm your lease terms and statute.",
+      "month_to_month_increase_allowed_rule": "Varies — generally allowed with proper notice.",
+      "just_cause_required_for_increase": "varies",
+      "delivery_method_rule": "Varies — confirm written notice and delivery method requirements.",
+      "retaliation_protection_note": "Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+    },
+    "habitability": {
+      "implied_warranty_of_habitability": true,
+      "landlord_repair_duty_rule": "1. Comply with requirements of applicable building codes materially affecting health and safety;",
+      "tenant_notice_required_rule": "Varies — confirm required notice/cure steps before remedies.",
+      "repair_and_deduct_allowed": "varies",
+      "rent_withholding_allowed": "varies",
+      "tenant_termination_for_unrepaired_conditions_rule": "Varies — some states allow termination after notice and failure to repair.",
+      "retaliation_prohibited": "varies",
+      "code_enforcement_contact_rule": "Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+    }
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "Bootstrapped from app/data/state_laws.json",
+      "url": "app/data/state_laws.json"
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Maximum amount: 1.5 months' rent"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Return deadline: 14 days"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.return_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Interest: Not required"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.interest_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1321. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Return deadline: 14 days"
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.itemized_statement_deadline_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1321. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.allowed_deductions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1321. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_receipt_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "C. At move-in, the landlord shall provide the tenant with: (1) a signed copy of the lease; (2) a move-in inspection checklist documenting existing damages; and (3) written notice of the tenant's right to be present at the move-out inspection. Upon request, the landlord shall notify the tenant of the time of the move-out inspection."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.move_in_checklist_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1321. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.penalty_for_bad_faith_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "D. Upon termination of the tenancy, the landlord may apply the security deposit and prepaid rent against: (1) all rent due; and (2) all costs, damages and fees as specified in the signed lease or this chapter, including damages for tenant's noncompliance per §33-1341. Within 14 business days (excluding Saturday, Sunday, and legal holidays) after the tenant has vacated, the landlord shall provide an itemized list of all deductions from the deposit together with any remaining balance due to the tenant. [Mailed to tenant's last known address.] If the tenant does not dispute the itemization within 60 days, the amounts are final."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.prepaid_rent_treatment_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "B. All nonrefundable fees or deposits shall be stated as such and the purpose shall be stated in writing by the landlord. Any fees or deposits not designated as nonrefundable shall be refundable."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.nonrefundable_fee_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1321. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.holding_deposit_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1321. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_storage_segregation_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1321. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.deposit_transfer_on_sale_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1321. SECURITY DEPOSITS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1321. SECURITY DEPOSITS."
+      ],
+      "appliesToFacts": [
+        "facts.security_deposit.special_rules_local_overrides_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "(C) If rent is unpaid when due and the tenant fails to pay within five (5) days after written notice by the landlord of nonpayment and intent to terminate, the landlord may terminate the rental agreement."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "(A) Except as provided in subsection (C) of this section, if there is a material noncompliance by the tenant with the rental agreement, the landlord may deliver a written notice to the tenant specifying the acts and omissions constituting the breach and that the rental agreement will terminate upon a date not less than ten (10) days after receipt of the notice if the breach is not remedied."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1375. PERIODIC TENANCY; HOLDOVER REMEDIES."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.month_to_month_notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.judicial_process_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.self_help_eviction_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "(C) If rent is unpaid when due and the tenant fails to pay within five (5) days after written notice by the landlord of nonpayment and intent to terminate, the landlord may terminate the rental agreement."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.nonpayment_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "(A) Except as provided in subsection (C) of this section, if there is a material noncompliance by the tenant with the rental agreement, the landlord may deliver a written notice to the tenant specifying the acts and omissions constituting the breach and that the rental agreement will terminate upon a date not less than ten (10) days after receipt of the notice if the breach is not remedied."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "(A) Except as provided in subsection (C) of this section, if there is a material noncompliance by the tenant with the rental agreement, the landlord may deliver a written notice to the tenant specifying the acts and omissions constituting the breach and that the rental agreement will terminate upon a date not less than ten (10) days after receipt of the notice if the breach is not remedied."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.lease_violation_cure_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1375. PERIODIC TENANCY; HOLDOVER REMEDIES."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.holdover_notice_type"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        ""
+      ],
+      "appliesToFacts": [
+        "facts.eviction.timeline_estimate_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.court_process_summary_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.filing_court_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1368. NONCOMPLIANCE WITH RENTAL AGREEMENT BY TENANT; FAILURE TO PAY RENT."
+      ],
+      "appliesToFacts": [
+        "facts.eviction.service_of_process_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1343. ACCESS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1343. ACCESS."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.notice_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1343. ACCESS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1343. ACCESS."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.typical_notice_hours"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1343. ACCESS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1343. ACCESS."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.advance_notice_required"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1343. ACCESS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "C. The landlord may enter the dwelling unit WITHOUT the tenant's consent in case of emergency."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.emergency_entry_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1343. ACCESS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A. The tenant shall not unreasonably withhold consent to the landlord to enter into the dwelling unit in order to inspect the premises; make necessary or agreed repairs, decorations, alterations or improvements; supply necessary or agreed services; or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers or contractors. A. The tenant shall not unreasonably withhold consent to the landlord to enter into the dwelling unit in order to inspect the premises; make necessary or agreed repairs, decorations, alterations or improvements; supply necessary or agreed services; or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers or contractors."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.allowed_entry_reasons_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1343. ACCESS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "D. The landlord shall not abuse the right of access or use it to harass the tenant. Except in case of emergency, or as impracticable, the landlord shall give the tenant at least TWO (2) days' notice of the landlord's intent to enter and may enter only at reasonable times."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.entry_time_window_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1343. ACCESS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A. The tenant shall not unreasonably withhold consent to the landlord to enter into the dwelling unit in order to inspect the premises; make necessary or agreed repairs, decorations, alterations or improvements; supply necessary or agreed services; or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers or contractors."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.tenant_can_refuse_unreasonable_entry"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1343. ACCESS.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1343. ACCESS."
+      ],
+      "appliesToFacts": [
+        "facts.landlord_entry.penalty_for_illegal_entry_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Arizona rent increase",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Arizona rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.notice_days"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Arizona rent increase",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Arizona rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.cap_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Arizona rent increase",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Arizona rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.statewide_rent_control"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Arizona rent increase",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Arizona rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.local_rent_control_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Arizona rent increase",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Arizona rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.fixed_term_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Arizona rent increase",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Arizona rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.month_to_month_increase_allowed_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Arizona rent increase",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Arizona rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.just_cause_required_for_increase"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Arizona rent increase",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Arizona rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.delivery_method_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "Arizona rent increase",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "Arizona rent increase"
+      ],
+      "appliesToFacts": [
+        "facts.rent_increase.retaliation_protection_note"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.implied_warranty_of_habitability"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "1. Comply with requirements of applicable building codes materially affecting health and safety;"
+      ],
+      "appliesToFacts": [
+        "facts.habitability.landlord_repair_duty_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_notice_required_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.repair_and_deduct_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.rent_withholding_allowed"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.tenant_termination_for_unrepaired_conditions_rule"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.retaliation_prohibited"
+      ]
+    },
+    {
+      "type": "statute",
+      "title": "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES.",
+      "url": "https://www.law.cornell.edu/states/arizona",
+      "extractedQuotes": [
+        "A.R.S. § 33-1324. LANDLORD TO MAINTAIN FIT PREMISES."
+      ],
+      "appliesToFacts": [
+        "facts.habitability.code_enforcement_contact_rule"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "stateSlug": "maryland",
+  "stateName": "Maryland",
+  "year": 2026,
+  "titleTag": "Maryland Landlord Tenant Law 2026 | Rights, Deposits & Eviction",
+  "metaDescription": "Maryland landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more. Plain-language guide for new landlords.",
+  "h1": "Maryland Landlord Tenant Law 2026",
+  "sections": [
+    {
+      "level": "h2",
+      "heading": "Security deposit rules",
+      "body": [
+        "If you're looking for Maryland security deposit rules, focus on (1) whether there is a cap, (2) when the deposit must be returned, and (3) whether an itemized statement is required."
+      ],
+      "bullets": [
+        "Deposit cap: Generally capped at 1 month's rent; limited exceptions can allow up to 2 months (confirm the exception criteria before charging more).",
+        "Return deadline: 45 days after move-out/tenancy end (deductions can affect details).",
+        "Itemized statement: required if deductions are taken (check deadlines and delivery method).",
+        "Deductions: Varies — confirm current statute.",
+        "Penalty risk: Varies — confirm current statute.",
+        "Interest: Varies — confirm current statute."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Eviction notice requirements",
+      "body": [
+        "For Maryland eviction notice requirements, the notice period often depends on why the eviction is being pursued (nonpayment vs lease violation vs holdover). Always use the correct notice form and follow the court process."
+      ],
+      "bullets": [
+        "Nonpayment notice: varies — confirm current statute and required notice form.",
+        "Nonpayment notice type: Varies — confirm required notice form (pay-or-quit, demand for possession, etc.).",
+        "Lease violation notice: varies — confirm cure rights and timelines.",
+        "Lease violation notice type: Varies — confirm notice type and cure rules.",
+        "Cure allowed: varies",
+        "Month-to-month termination: commonly 30 days (verify tenancy type).",
+        "Holdover/termination notice type: Varies — confirm termination/holdover notice rules.",
+        "Court process: confirm whether judicial eviction is required (most states prohibit self-help).",
+        "Self-help eviction: varies — confirm current statute and case law.",
+        "Timeline: ",
+        "Court steps: {\"statutes\":\"Md. Code, Real Property §§ 8-401, 8-402, 8-402.1\",\"notice_requirements\":{\"nonpayment_of_rent\":\"Notice to pay or quit varies by county; typically 5-day notice to pay or vacate under § 8-401\",\"holdover_tenant\":\"1-month notice to quit for month-to-month (RC 8-402.1); 1-week notice for week-to-week tenancy\",\"lease_violation\":\"30-day notice to cure for material breach (RC 8-402)\",\"just_cause_required\":\"HB 18 (2025) requires just cause for eviction starting January 2026 in most counties\"},\"full_text\":\"Md. Real Property Code § 8-401. Failure to pay rent. (a) If rent is due and unpaid, the landlord may terminate the tenancy and recover possession of the premises in the same manner as if the tenancy was for a definite term but was created orally or in writing. (b) The landlord may give the tenant written notice requiring the tenant to pay rent or vacate the premises within the time provided in the lease, or if no time is provided, within a reasonable time. (c) If the tenant fails to pay rent when due, the landlord may bring an action for possession and rent.\\nMd. Real Property Code § 8-402. Breach of lease covenant. If the tenant breaches a covenant or condition of the lease, the landlord may give the tenant written notice specifying the breach and stating that the lease will terminate upon a date not less than 30 days after receipt of the notice if the breach is not remedied. If the breach is remediable and the tenant adequately remedies the breach within the notice period, the lease does not terminate.\\nMd. Real Property Code § 8-402.1. Holding over after expiration of term. If the tenant holds over after the expiration of the lease term, the landlord may bring an action for possession. For month-to-month tenancies, at least one month's notice to quit is required. For week-to-week tenancies, at least one week's notice to quit is required.\"}"
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Landlord entry notice",
+      "body": [
+        "If you're searching for Maryland landlord entry notice rules, look for (1) required notice time, (2) allowed entry reasons, and (3) emergency exceptions."
+      ],
+      "bullets": [
+        "Notice: often governed by lease terms and a reasonableness standard (state law may not set a single hour-count).",
+        "Typical notice time: varies; many leases use 24 hours as a practical baseline.",
+        "Allowed reasons: Varies — commonly inspections, repairs, services, and showing the unit.",
+        "Timing: Varies — usually at reasonable times.",
+        "Emergencies: generally allow entry without advance notice.",
+        "Tenant refusal: varies",
+        "Remedies/penalties: Varies — confirm remedies (injunction, damages, attorney fees) under state law."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Rent increase rules",
+      "body": [
+        "For Maryland rent increase rules, most states focus on notice requirements, while rent caps are usually local (or limited to specific covered housing)."
+      ],
+      "bullets": [
+        "Statewide rent control: typically none, but local/covered-housing rules may apply.",
+        "Local rent control: may exist in certain cities/counties (check if your property is covered).",
+        "Notice of rent increase: varies — confirm current statute and any local ordinances.",
+        "Fixed-term leases: Varies — confirm your lease terms and statute.",
+        "Month-to-month: Varies — generally allowed with proper notice.",
+        "Delivery: Varies — confirm written notice and delivery method requirements.",
+        "Just cause: varies",
+        "Retaliation: Retaliation protections may limit rent increases after protected tenant complaints; confirm local/state rules."
+      ]
+    },
+    {
+      "level": "h2",
+      "heading": "Tenant rights & habitability basics",
+      "body": [
+        "Most Maryland landlord tenant law disputes involve habitability, repairs, and retaliation protections. Keep repair requests documented and respond promptly."
+      ],
+      "bullets": [
+        "Habitability: confirm whether an implied warranty applies",
+        "Landlord repair duty: Varies — confirm landlord repair/habitability duties in statute and local code.",
+        "Tenant notice: Varies — confirm required notice/cure steps before remedies.",
+        "Repair-and-deduct: varies",
+        "Rent withholding: varies",
+        "Termination: Varies — some states allow termination after notice and failure to repair.",
+        "Retaliation: varies",
+        "Code enforcement: Varies — contact local housing/code enforcement (city/county) for inspections and official repair orders."
+      ]
+    }
+  ],
+  "jurisdictionNotes": [
+    "Local ordinances (city/county) can be stricter than state law.",
+    "Rules can change; verify before acting on any single requirement."
+  ],
+  "confidenceNotes": [
+    "This page is being refreshed for accuracy; key limits and notice periods are verified state-by-state during the rollout."
+  ]
+}
