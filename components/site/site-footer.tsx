@@ -11,10 +11,6 @@ function isAppShellRoute(pathname: string) {
     pathname.startsWith("/audit/") ||
     pathname === "/generate" ||
     pathname.startsWith("/generate/") ||
-    pathname === "/login" ||
-    pathname.startsWith("/login/") ||
-    pathname === "/signup" ||
-    pathname.startsWith("/signup/") ||
     pathname === "/upgrade" ||
     pathname.startsWith("/upgrade/")
   )

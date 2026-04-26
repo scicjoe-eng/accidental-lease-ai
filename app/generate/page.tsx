@@ -1,7 +1,5 @@
 import type { Metadata } from "next"
 
-import { DashboardShell } from "@/components/dashboard/dashboard-shell"
-
 import { GenerateLeaseForm } from "./generate-form"
 
 export const metadata: Metadata = {
@@ -12,8 +10,8 @@ export const metadata: Metadata = {
 
 export default function GeneratePage() {
   return (
-    <DashboardShell>
+    <div className="mx-auto w-full max-w-[1400px] flex-1 px-4 py-10 sm:px-6">
       <GenerateLeaseForm />
-    </DashboardShell>
+    </div>
   )
 }

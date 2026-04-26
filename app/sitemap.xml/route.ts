@@ -2,6 +2,9 @@ import { NextResponse } from "next/server"
 import fs from "node:fs/promises"
 import path from "node:path"
 
+import { BLOG_POSTS } from "@/app/blog/posts"
+import { GUIDES } from "@/app/guides/guides"
+
 const SITE = "https://accidental-lease-ai.com"
 
 function escapeXml(s: string): string {
@@ -40,13 +43,25 @@ async function generateSitemap(): Promise<string> {
     { loc: `${SITE}/features`, priority: 0.8, lastmod: staticLastmod },
     { loc: `${SITE}/features/lease-analyzer`, priority: 0.8, lastmod: staticLastmod },
     { loc: `${SITE}/blog`, priority: 0.7, lastmod: staticLastmod },
-    { loc: `${SITE}/blog/accidental-landlord-checklist`, priority: 0.7, lastmod: staticLastmod },
-    { loc: `${SITE}/blog/suddenly-became-a-landlord`, priority: 0.7, lastmod: staticLastmod },
-    { loc: `${SITE}/blog/accidental-landlord-tax-guide`, priority: 0.7, lastmod: staticLastmod },
-    { loc: `${SITE}/blog/renting-out-your-home-first-time`, priority: 0.7, lastmod: staticLastmod },
+    { loc: `${SITE}/guides`, priority: 0.7, lastmod: staticLastmod },
+    { loc: `${SITE}/legal`, priority: 0.6, lastmod: staticLastmod },
+    { loc: `${SITE}/legal/terms`, priority: 0.5, lastmod: staticLastmod },
+    { loc: `${SITE}/legal/disclaimer`, priority: 0.5, lastmod: staticLastmod },
     { loc: `${SITE}/about`, priority: 0.6, lastmod: staticLastmod },
     { loc: `${SITE}/privacy`, priority: 0.6, lastmod: staticLastmod },
   ]
+
+  const blogEntries: UrlEntry[] = BLOG_POSTS.map((p) => ({
+    loc: `${SITE}/blog/${p.slug}`,
+    lastmod: staticLastmod,
+    priority: 0.7,
+  }))
+
+  const guideEntries: UrlEntry[] = GUIDES.map((g) => ({
+    loc: `${SITE}/guides/${g.slug}`,
+    lastmod: staticLastmod,
+    priority: 0.7,
+  }))
 
   const statesDir = path.join(process.cwd(), "app", "data", "states")
   const files = (await fs.readdir(statesDir)).filter((f) => f.endsWith(".json") && f !== "index.json")
@@ -63,7 +78,7 @@ async function generateSitemap(): Promise<string> {
     })
   }
 
-  const all = [...core, ...stateEntries]
+  const all = [...core, ...blogEntries, ...guideEntries, ...stateEntries]
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
     `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
     all

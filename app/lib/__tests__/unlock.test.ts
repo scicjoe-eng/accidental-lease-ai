@@ -23,11 +23,21 @@ jest.mock("@/app/lib/gumroad", () => ({
 const maybeSingle = jest.fn()
 const upsert = jest.fn()
 const update = jest.fn()
+const peekMaybeSingle = jest.fn()
 
 jest.mock("@/app/lib/supabase-service", () => ({
   createServiceRoleSupabase: jest.fn(() => ({
     from: jest.fn(() => ({
-      select: jest.fn(() => ({ eq: jest.fn(() => ({ maybeSingle })) })),
+      select: jest.fn(() => ({
+        eq: jest.fn(() => ({
+          gt: jest.fn(() => ({
+            is: jest.fn(() => ({
+              maybeSingle: peekMaybeSingle,
+            })),
+          })),
+          maybeSingle,
+        })),
+      })),
       upsert,
       update,
     })),
@@ -48,6 +58,10 @@ describe("unlock", () => {
   })
 
   it("consumeUnlockFromCookie: returns consumed=false when update affects 0 rows", async () => {
+    peekMaybeSingle.mockResolvedValueOnce({
+      data: { key_hash: "kh", gumroad_product_id: "prod" },
+      error: null,
+    })
     update.mockReturnValueOnce({
       eq: () => ({
         gt: () => ({
@@ -64,6 +78,10 @@ describe("unlock", () => {
   })
 
   it("consumeUnlockFromCookie: returns consumed=true when update returns 1 row", async () => {
+    peekMaybeSingle.mockResolvedValueOnce({
+      data: { key_hash: "kh", gumroad_product_id: "prod" },
+      error: null,
+    })
     update.mockReturnValueOnce({
       eq: () => ({
         gt: () => ({

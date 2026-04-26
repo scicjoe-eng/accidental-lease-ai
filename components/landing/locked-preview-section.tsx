@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react"
 import Link from "next/link"
 
+import { GUMROAD_PRO_CHECKOUT_URL } from "@/app/lib/gumroad"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -59,14 +60,25 @@ function LockedPreviewPanel() {
       <div className="absolute inset-x-0 bottom-0 p-5">
         <div className="pointer-events-auto">
           <Link
-            href="/upgrade"
+            href="/upgrade?redirectTo=/audit#redeem"
             className={cn(
               buttonVariants({ variant: "default", size: "lg" }),
               "w-full justify-center"
             )}
           >
-            Unlock to view full results
+            Redeem key to unlock
           </Link>
+          <a
+            href={GUMROAD_PRO_CHECKOUT_URL}
+            target="_blank"
+            rel="noreferrer"
+            className={cn(
+              buttonVariants({ variant: "outline", size: "lg" }),
+              "mt-2 w-full justify-center"
+            )}
+          >
+            Buy Pro on Gumroad
+          </a>
         </div>
       </div>
     </div>
@@ -181,10 +193,10 @@ export function LockedPreviewSection() {
                 {state.kind === "busy" ? "Verifying..." : "Unlock"}
               </Button>
               <Link
-                href="/upgrade"
+                href="/upgrade?redirectTo=/audit#redeem"
                 className={cn(buttonVariants({ variant: "link" }), "justify-start")}
               >
-                Get a Key on Gumroad
+                Redeem on /upgrade
               </Link>
             </div>
           </form>
@@ -192,6 +204,19 @@ export function LockedPreviewSection() {
           <p className="text-xs text-muted-foreground">
             Unlock = 10-minute full view in this browser. First full view consumes
             the key. One PDF download.
+          </p>
+
+          <p className="text-xs text-muted-foreground">
+            Need a key?{" "}
+            <a
+              className="text-primary underline underline-offset-4 hover:opacity-90"
+              href={GUMROAD_PRO_CHECKOUT_URL}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Buy Pro on Gumroad
+            </a>
+            .
           </p>
         </CardContent>
       </Card>

@@ -205,6 +205,24 @@ export async function consumeUnlockFromCookie(): Promise<AtomicConsumeResult> {
   const nowIso = new Date().toISOString()
   const supabase = createServiceRoleSupabase()
 
+  // Test-bypass sessions are intended to be unlimited. Detect them first.
+  const { data: peek, error: peekError } = await supabase
+    .from("license_redemptions")
+    .select("key_hash, gumroad_product_id")
+    .eq("session_token_hash", tokenHash)
+    .gt("session_expires_at", nowIso)
+    .is("consumed_at", null)
+    .maybeSingle()
+
+  if (peekError) return { ok: false, error: "Unlock consume failed." }
+  if (!peek) return { ok: true, consumed: false }
+  const peekKeyHash = String((peek as { key_hash?: unknown }).key_hash ?? "")
+  const peekProduct = String((peek as { gumroad_product_id?: unknown }).gumroad_product_id ?? "")
+  if (!peekKeyHash) return { ok: true, consumed: false }
+  if (peekProduct === "TEST_UNLIMITED") {
+    return { ok: true, consumed: true, keyHash: peekKeyHash }
+  }
+
   // Atomic update: only one concurrent request can update 1 row.
   const { data, error } = await supabase
     .from("license_redemptions")
@@ -212,7 +230,7 @@ export async function consumeUnlockFromCookie(): Promise<AtomicConsumeResult> {
     .eq("session_token_hash", tokenHash)
     .gt("session_expires_at", nowIso)
     .is("consumed_at", null)
-    .select("key_hash, gumroad_product_id")
+    .select("key_hash")
 
   if (error) return { ok: false, error: "Unlock consume failed." }
   const rows = Array.isArray(data) ? data : []
@@ -220,10 +238,6 @@ export async function consumeUnlockFromCookie(): Promise<AtomicConsumeResult> {
   const row = rows[0]
   const keyHash = String(row?.key_hash ?? "")
   if (!keyHash) return { ok: true, consumed: false }
-  // Never consume test-bypass sessions — they are unlimited
-  if (row?.gumroad_product_id === "TEST_UNLIMITED") {
-    return { ok: true, consumed: true, keyHash } // report consumed=true so caller proceeds, but don't actually consume
-  }
   return { ok: true, consumed: true, keyHash }
 }
 

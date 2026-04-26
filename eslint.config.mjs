@@ -5,6 +5,15 @@ import nextTs from "eslint-config-next/typescript";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
+  // The project has a large amount of marketing copy and static content pages.
+  // Escaping every apostrophe/quote hurts readability and doesn't improve runtime correctness.
+  {
+    files: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+    rules: {
+      "react/no-unescaped-entities": "off",
+      "@next/next/no-html-link-for-pages": "off",
+    },
+  },
   // Scripts: CanonicalStateLaws has typed sub-fields with any-cast risk
   {
     ignores: [
@@ -16,6 +25,14 @@ const eslintConfig = defineConfig([
   {
     files: ["script/**"],
     rules: { "@typescript-eslint/no-explicit-any": "warn" },
+  },
+  // Tests: allow pragmatic fixtures/mocks.
+  {
+    files: ["**/*.{test,spec}.{ts,tsx,js,jsx}"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+    },
   },
   // Override default ignores of eslint-config-next.
   globalIgnores([

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Suspense } from "react"
 
 import { UpgradePageClient } from "@/app/upgrade/upgrade-client"
 
@@ -11,7 +12,9 @@ export const metadata: Metadata = {
 export default async function UpgradePage() {
   return (
     <div className="min-h-dvh bg-background px-4 py-16 text-foreground">
-      <UpgradePageClient />
+      <Suspense fallback={<div className="mx-auto max-w-lg text-sm text-muted-foreground">Loading…</div>}>
+        <UpgradePageClient />
+      </Suspense>
     </div>
   )
 }

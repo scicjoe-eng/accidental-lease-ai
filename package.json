@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
+    "analyze": "ANALYZE=true npm run build",
     "start": "next start",
     "lint": "eslint",
     "test": "jest",
@@ -27,10 +28,11 @@
     "@hookform/resolvers": "^5.2.2",
     "@langchain/community": "^1.1.27",
     "@langchain/core": "^1.1.40",
-    "@supabase/ssr": "^0.10.2",
     "@supabase/supabase-js": "^2.103.3",
     "@upstash/ratelimit": "^2.0.6",
     "@upstash/redis": "^1.35.3",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "ai": "^6.0.168",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -56,6 +58,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^16.2.4",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.2.0",

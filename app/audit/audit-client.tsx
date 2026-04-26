@@ -1,11 +1,13 @@
 "use client"
 
-import { useCallback, useRef, useState, useTransition } from "react"
+import { useCallback, useEffect, useRef, useState, useTransition } from "react"
 import Link from "next/link"
 import {
   AlertTriangle,
   CheckCircle2,
-  FileText,
+  Lightbulb,
+  LockKeyhole,
+  Scale,
   ShieldAlert,
   Trash2,
   Upload,
@@ -13,6 +15,7 @@ import {
 
 import { runLeaseAuditAction } from "@/app/audit/actions"
 import type { LeaseAuditReport } from "@/app/lib/audit"
+import { GUMROAD_PRO_CHECKOUT_URL } from "@/app/lib/gumroad"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -20,7 +23,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -31,6 +33,33 @@ import { cn } from "@/lib/utils"
 const MAX_BYTES = 10 * 1024 * 1024
 const DOCX_MIME =
   "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+
+type StoredAuditPreview = {
+  report: LeaseAuditReport
+  meta: { extractedTextLength: number; truncated: boolean } | null
+  lockedTotals: { totalIssues: number; totalRecommendedActions: number } | null
+  lockedPreview: boolean
+  savedAt: number
+}
+
+function loadStoredAuditPreview(): StoredAuditPreview | null {
+  if (typeof window === "undefined") return null
+  const raw = window.sessionStorage.getItem("accilease:lastAuditPreview")
+  if (!raw) return null
+  try {
+    const parsed = JSON.parse(raw) as StoredAuditPreview
+    if (typeof parsed?.savedAt !== "number") return null
+    if (Date.now() - parsed.savedAt > 30 * 60 * 1000) {
+      window.sessionStorage.removeItem("accilease:lastAuditPreview")
+      return null
+    }
+    if (!parsed.report) return null
+    return parsed
+  } catch {
+    window.sessionStorage.removeItem("accilease:lastAuditPreview")
+    return null
+  }
+}
 
 function riskScoreNumber(report: LeaseAuditReport): number {
   switch (report.riskScore) {
@@ -69,6 +98,18 @@ function riskBlockStyles(score: LeaseAuditReport["riskScore"]) {
   }
 }
 
+function countIssues(report: LeaseAuditReport) {
+  let high = 0
+  let medium = 0
+  let low = 0
+  for (const i of report.issues) {
+    if (i.risk === "high") high++
+    else if (i.risk === "medium") medium++
+    else low++
+  }
+  return { high, medium, low }
+}
+
 function issueRiskBadgeVariant(
   r: LeaseAuditReport["issues"][number]["risk"]
 ): "destructive" | "secondary" | "outline" {
@@ -77,24 +118,84 @@ function issueRiskBadgeVariant(
   return "outline"
 }
 
+function issueCardTone(risk: LeaseAuditReport["issues"][number]["risk"]) {
+  if (risk === "high") {
+    return {
+      card: "border-l-4 border-l-red-500 bg-red-500/5",
+      badge: "bg-red-500/10 text-red-700 ring-1 ring-red-500/20 dark:text-red-300",
+      callout: "border-red-500/25 bg-red-500/5 text-red-900 dark:text-red-100",
+    }
+  }
+  if (risk === "medium") {
+    return {
+      card: "border-l-4 border-l-amber-500 bg-amber-500/5",
+      badge:
+        "bg-amber-500/10 text-amber-800 ring-1 ring-amber-500/20 dark:text-amber-200",
+      callout:
+        "border-amber-500/25 bg-amber-500/5 text-amber-950 dark:text-amber-50",
+    }
+  }
+  return {
+    card: "border-l-4 border-l-emerald-500 bg-emerald-500/5",
+    badge:
+      "bg-emerald-500/10 text-emerald-800 ring-1 ring-emerald-500/20 dark:text-emerald-200",
+    callout:
+      "border-emerald-500/25 bg-emerald-500/5 text-emerald-950 dark:text-emerald-50",
+  }
+}
+
 export function AuditLeaseClient() {
   const inputRef = useRef<HTMLInputElement>(null)
   const downloadAnchorRef = useRef<HTMLAnchorElement>(null)
+
+  const stored = loadStoredAuditPreview()
 
   const [file, setFile] = useState<File | null>(null)
   const [dragActive, setDragActive] = useState(false)
   const [localError, setLocalError] = useState<string | null>(null)
   const [actionError, setActionError] = useState<string | null>(null)
   const [uploadProgress, setUploadProgress] = useState(0)
-  const [report, setReport] = useState<LeaseAuditReport | null>(null)
+  const [report, setReport] = useState<LeaseAuditReport | null>(() => stored?.report ?? null)
   const [pdfId, setPdfId] = useState<string | null>(null)
+  const [lockedPreview, setLockedPreview] = useState(() => stored?.lockedPreview === true)
+  const [lockedTotals, setLockedTotals] = useState<{
+    totalIssues: number
+    totalRecommendedActions: number
+  } | null>(() => stored?.lockedTotals ?? null)
   const [meta, setMeta] = useState<{
     extractedTextLength: number
     truncated: boolean
-  } | null>(null)
+  } | null>(() => stored?.meta ?? null)
 
   const [isAuditing, setIsAuditing] = useState(false)
   const [, startTransition] = useTransition()
+
+  // If returning from /upgrade, scroll to results.
+  useEffect(() => {
+    if (typeof window === "undefined") return
+    const sp = new URLSearchParams(window.location.search)
+    if (sp.get("fromUpgrade") === "1") {
+      window.setTimeout(() => {
+        const el = document.getElementById("audit-results")
+        el?.scrollIntoView({ behavior: "smooth", block: "start" })
+      }, 50)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+    if (!report || !lockedPreview) return
+    window.sessionStorage.setItem(
+      "accilease:lastAuditPreview",
+      JSON.stringify({
+        report,
+        meta,
+        lockedTotals,
+        lockedPreview: true,
+        savedAt: Date.now(),
+      })
+    )
+  }, [report, meta, lockedTotals, lockedPreview])
 
   const validateAndSetFile = useCallback((f: File | null) => {
     setLocalError(null)
@@ -102,6 +203,8 @@ export function AuditLeaseClient() {
     setReport(null)
     setPdfId(null)
     setMeta(null)
+    setLockedPreview(false)
+    setLockedTotals(null)
     if (!f) {
       setFile(null)
       setUploadProgress(0)
@@ -145,6 +248,8 @@ export function AuditLeaseClient() {
     setReport(null)
     setPdfId(null)
     setMeta(null)
+    setLockedPreview(false)
+    setLockedTotals(null)
     const input = inputRef.current
     if (input) input.value = ""
   }, [isAuditing])
@@ -168,11 +273,19 @@ export function AuditLeaseClient() {
             return
           }
           if (res.locked) {
+            setLockedPreview(true)
+            setLockedTotals({
+              totalIssues: res.totalIssues ?? res.report.issues.length,
+              totalRecommendedActions:
+                res.totalRecommendedActions ?? res.report.recommendedActions.length,
+            })
             setActionError(
               "Preview only. Enter a Gumroad License Key on /upgrade to unlock full viewing and one PDF download (first full response consumes the key)."
             )
           } else {
             setActionError(null)
+            setLockedPreview(false)
+            setLockedTotals(null)
           }
           setReport(res.report)
           setPdfId(res.pdfId ?? null)
@@ -188,6 +301,8 @@ export function AuditLeaseClient() {
           setReport(null)
           setPdfId(null)
           setMeta(null)
+          setLockedPreview(false)
+          setLockedTotals(null)
         })
       })
       .finally(() => {
@@ -207,8 +322,11 @@ export function AuditLeaseClient() {
   }
 
   const styles = report ? riskBlockStyles(report.riskScore) : null
-  const combinedError = localError ?? actionError
+  const combinedError = localError ?? (lockedPreview ? null : actionError)
   const resultPhaseKey = isAuditing ? "loading" : report ? "result" : "idle"
+  const issueCounts = report ? countIssues(report) : null
+  const score = report ? riskScoreNumber(report) : null
+  const previewIssuesCount = report?.issues.length ?? 0
 
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-8 text-foreground">
@@ -286,23 +404,39 @@ export function AuditLeaseClient() {
               onDragLeave={() => setDragActive(false)}
               onDrop={onDrop}
               className={cn(
-                "flex min-h-[180px] w-full cursor-pointer flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed px-6 py-10 transition-colors",
+                "flex min-h-[190px] w-full cursor-pointer flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed px-6 py-10 text-center transition-all duration-200 ease-out",
                 dragActive
-                  ? "border-primary bg-primary/5"
-                  : "border-border hover:border-primary/50 hover:bg-muted/40"
+                  ? "border-primary bg-primary/10 shadow-[0_0_24px_rgba(16,185,129,0.25)]"
+                  : "border-slate-300/70 bg-background hover:border-primary/60 hover:bg-primary/5 dark:border-slate-600/60",
+                isAuditing && "animate-pulse"
               )}
             >
-              <div className="bg-muted flex size-12 items-center justify-center rounded-full">
+              <div
+                className={cn(
+                  "flex size-12 items-center justify-center rounded-full ring-1 ring-border/70 transition-all",
+                  dragActive ? "bg-primary/15 ring-primary/30" : "bg-muted/60"
+                )}
+              >
                 <span className="inline-flex">
-                  <Upload className="text-muted-foreground size-6" aria-hidden />
+                  <Upload
+                    className={cn(
+                      "size-6",
+                      dragActive ? "text-primary" : "text-muted-foreground"
+                    )}
+                    aria-hidden
+                  />
                 </span>
               </div>
               <div className="text-center">
-                <p className="text-sm font-medium">
-                  Drop your PDF/DOCX here, or click to browse
+                <p className="text-sm font-semibold">
+                  {isAuditing
+                    ? "Analyzing your lease…"
+                    : "Drop your PDF/DOCX here, or click to browse"}
                 </p>
                 <p className="text-muted-foreground mt-1 text-xs">
-                  PDF/DOCX · 10MB max
+                  {isAuditing
+                    ? "This can take up to a minute."
+                    : "PDF/DOCX · 10MB max"}
                 </p>
               </div>
             </button>
@@ -312,12 +446,16 @@ export function AuditLeaseClient() {
             {file ? (
               <div
                 key="file-status"
-                className="space-y-2 rounded-lg border bg-muted/30 px-4 py-3"
+                className="space-y-2 rounded-lg border border-border/60 bg-muted/20 px-4 py-3"
               >
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-2">
                   <div className="flex min-w-0 flex-1 items-center gap-2 text-sm">
                     <span className="inline-flex shrink-0">
-                      <FileText className="text-muted-foreground size-4" aria-hidden />
+                      {isAuditing ? (
+                        <Upload className="size-4 text-primary" aria-hidden />
+                      ) : (
+                        <CheckCircle2 className="size-4 text-primary" aria-hidden />
+                      )}
                     </span>
                     <span className="min-w-0 truncate font-medium" title={file.name}>
                       {file.name}
@@ -365,9 +503,14 @@ export function AuditLeaseClient() {
                       </div>
                     </div>
                   ) : (
-                    <p className="text-muted-foreground text-xs">
-                      File ready. Tap Start Audit when you are set.
-                    </p>
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <p className="text-xs text-muted-foreground">
+                        Ready to audit. Tap <span className="font-medium text-foreground">Start Audit</span>.
+                      </p>
+                      <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary ring-1 ring-primary/15">
+                        ✓ File validated
+                      </span>
+                    </div>
                   )}
                 </div>
               </div>
@@ -377,7 +520,91 @@ export function AuditLeaseClient() {
           </div>
 
           <div className="min-h-0">
-            {combinedError ? (
+            {lockedPreview && actionError ? (
+              <div className="min-h-0">
+                <Alert className="border-primary/25 bg-primary/10">
+                  <LockKeyhole className="text-primary" aria-hidden />
+                  <AlertTitle>Preview mode (locked)</AlertTitle>
+                  <AlertDescription>
+                    <div className="space-y-3">
+                      <p>{actionError}</p>
+
+                      {lockedTotals ? (
+                        <div className="rounded-lg border border-border/60 bg-background/60 p-3 text-xs">
+                          <p className="font-medium text-foreground">What you’re seeing</p>
+                          <p className="mt-2 text-muted-foreground">
+                            Showing <span className="font-medium text-foreground">{previewIssuesCount}</span> of{" "}
+                            <span className="font-medium text-foreground">{lockedTotals.totalIssues}</span> issues,
+                            and <span className="font-medium text-foreground">{Math.min(3, lockedTotals.totalRecommendedActions)}</span> of{" "}
+                            <span className="font-medium text-foreground">{lockedTotals.totalRecommendedActions}</span>{" "}
+                            recommended actions.
+                          </p>
+                        </div>
+                      ) : null}
+
+                      <div className="rounded-lg border border-border/60 bg-background/60 p-3 text-xs">
+                        <p className="font-medium text-foreground">Unlock includes</p>
+                        <ul className="mt-2 list-inside list-disc space-y-1 text-muted-foreground">
+                          <li>Full issue list (not just the top preview)</li>
+                          <li>One downloadable PDF audit report</li>
+                          <li>10-minute full view in this browser</li>
+                        </ul>
+                      </div>
+
+                      <div className="rounded-xl border border-border/60 bg-card/50 p-4">
+                        <p className="text-xs font-semibold tracking-wide uppercase text-muted-foreground">
+                          PDF report preview
+                        </p>
+                        <div className="mt-3 overflow-hidden rounded-lg border border-border/60 bg-background">
+                          <div className="space-y-3 p-4">
+                            <div className="h-3 w-2/3 rounded bg-muted/60" />
+                            <div className="h-2 w-1/2 rounded bg-muted/50" />
+                            <div className="h-2 w-11/12 rounded bg-muted/50" />
+                            <div className="h-2 w-10/12 rounded bg-muted/50" />
+                            <div className="h-2 w-9/12 rounded bg-muted/50" />
+                          </div>
+                          <div className="relative h-16 border-t border-border/60 bg-muted/20">
+                            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary ring-1 ring-primary/20">
+                                Unlock to download the full PDF
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+                        <Button
+                          size="lg"
+                          className="w-full sm:w-auto"
+                          nativeButton={false}
+                          render={<Link href="/upgrade?redirectTo=/audit#redeem" />}
+                        >
+                          Redeem key
+                        </Button>
+                        <Button
+                          variant="outline"
+                          className="w-full sm:w-auto"
+                          nativeButton={false}
+                          render={<Link href="/upgrade?redirectTo=/audit#redeem" />}
+                        >
+                          I already have a key
+                        </Button>
+                        <a
+                          href={GUMROAD_PRO_CHECKOUT_URL}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex w-full justify-center rounded-lg border border-white/20 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/10 sm:w-auto"
+                        >
+                          Buy Pro on Gumroad
+                        </a>
+                      </div>
+                    </div>
+                  </AlertDescription>
+                </Alert>
+              </div>
+            ) : combinedError ? (
               <div key="error-alert" className="min-h-0">
                 <Alert variant="destructive">
                   <AlertTriangle aria-hidden />
@@ -425,7 +652,7 @@ export function AuditLeaseClient() {
         </CardContent>
       </Card>
 
-      <div className="min-h-0" key={resultPhaseKey}>
+      <div id="audit-results" className="min-h-0 scroll-mt-20" key={resultPhaseKey}>
         {report && styles ? (
           <div className="flex flex-col gap-6">
             <div
@@ -464,6 +691,41 @@ export function AuditLeaseClient() {
                   </p>
                 </div>
               </div>
+
+              {typeof score === "number" ? (
+                <div className="mt-6">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className={styles.sub}>Lower</span>
+                    <span className={styles.sub}>Higher</span>
+                  </div>
+                  <div className="mt-2">
+                    <Progress value={score} max={100} className="bg-white/10" />
+                  </div>
+                </div>
+              ) : null}
+
+              {issueCounts ? (
+                <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
+                  <div className="rounded-xl bg-white/10 p-4 ring-1 ring-white/15">
+                    <p className={cn("text-xs font-medium uppercase tracking-wide", styles.sub)}>
+                      High risk
+                    </p>
+                    <p className="mt-1 text-2xl font-semibold tabular-nums">{issueCounts.high}</p>
+                  </div>
+                  <div className="rounded-xl bg-white/10 p-4 ring-1 ring-white/15">
+                    <p className={cn("text-xs font-medium uppercase tracking-wide", styles.sub)}>
+                      Medium
+                    </p>
+                    <p className="mt-1 text-2xl font-semibold tabular-nums">{issueCounts.medium}</p>
+                  </div>
+                  <div className="rounded-xl bg-white/10 p-4 ring-1 ring-white/15">
+                    <p className={cn("text-xs font-medium uppercase tracking-wide", styles.sub)}>
+                      Low
+                    </p>
+                    <p className="mt-1 text-2xl font-semibold tabular-nums">{issueCounts.low}</p>
+                  </div>
+                </div>
+              ) : null}
             </div>
 
             <div className="min-h-0">
@@ -487,7 +749,24 @@ export function AuditLeaseClient() {
 
             <Card key="issues-card">
               <CardHeader>
-                <CardTitle className="font-heading">Issues found</CardTitle>
+                <div className="flex flex-wrap items-start justify-between gap-2">
+                  <CardTitle className="font-heading">Issues found</CardTitle>
+                  {lockedPreview && lockedTotals ? (
+                    <span className="inline-flex flex-wrap items-center gap-2">
+                      <Badge className="bg-primary/10 text-primary ring-1 ring-primary/20">
+                        {previewIssuesCount} shown / {lockedTotals.totalIssues} total
+                      </Badge>
+                      {lockedTotals.totalIssues > previewIssuesCount ? (
+                        <Badge
+                          variant="outline"
+                          className="border-primary/30 bg-background/60 text-foreground"
+                        >
+                          +{lockedTotals.totalIssues - previewIssuesCount} locked
+                        </Badge>
+                      ) : null}
+                    </span>
+                  ) : null}
+                </div>
                 <CardDescription>
                   <span>
                     {report.issues.length} flagged item
@@ -500,78 +779,142 @@ export function AuditLeaseClient() {
               </CardHeader>
               <CardContent className="space-y-4">
                 {report.issues.map((issue, idx) => (
-                  <Card
-                    key={`issue-${idx}-${issue.clause.slice(0, 48)}`}
-                    size="sm"
-                    className="bg-muted/20"
-                  >
-                    <CardHeader className="pb-2">
-                      <div className="flex flex-wrap items-start justify-between gap-2">
-                        <CardTitle className="text-sm leading-snug">
-                          <span>{issue.clause}</span>
-                        </CardTitle>
-                        <span className="inline-flex shrink-0">
-                          <Badge variant={issueRiskBadgeVariant(issue.risk)}>
-                            {issue.risk} risk
-                          </Badge>
-                        </span>
-                      </div>
-                    </CardHeader>
-                    <CardContent className="space-y-2 text-sm">
-                      <p>
-                        <span className="text-muted-foreground">Why it matters: </span>
-                        <span>{issue.explanation}</span>
-                      </p>
-                      <p>
-                        <span className="text-muted-foreground">Suggestion: </span>
-                        <span>{issue.suggestion}</span>
-                      </p>
-                      <p className="text-muted-foreground text-xs">
-                        <span>{issue.stateLawReference}</span>
-                      </p>
-                    </CardContent>
-                  </Card>
+                    <Card
+                      key={`issue-${idx}-${issue.clause.slice(0, 48)}`}
+                      size="sm"
+                      className={cn("bg-background", issueCardTone(issue.risk).card)}
+                    >
+                      <CardHeader className="pb-2">
+                        <div className="flex flex-wrap items-start justify-between gap-2">
+                          <CardTitle className="text-sm leading-snug">
+                            <span>{issue.clause}</span>
+                          </CardTitle>
+                          <span className="inline-flex shrink-0">
+                            <Badge
+                              variant={issueRiskBadgeVariant(issue.risk)}
+                              className={issueCardTone(issue.risk).badge}
+                            >
+                              {issue.risk} risk
+                            </Badge>
+                          </span>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="space-y-3 text-sm">
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground">
+                            Why it matters
+                          </p>
+                          <p className="leading-relaxed">{issue.explanation}</p>
+                        </div>
+
+                        <div
+                          className={cn(
+                            "rounded-lg border p-3",
+                            issueCardTone(issue.risk).callout
+                          )}
+                        >
+                          <div className="flex items-start gap-2">
+                            <Lightbulb className="mt-0.5 size-4 opacity-80" aria-hidden />
+                            <div className="min-w-0">
+                              <p className="text-xs font-semibold tracking-wide uppercase">
+                                Suggested improvement
+                              </p>
+                              <p className="mt-1 leading-relaxed">{issue.suggestion}</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="rounded-lg border border-border/60 bg-card/40 p-3">
+                          <div className="flex items-start gap-2">
+                            <Scale className="mt-0.5 size-4 text-muted-foreground" aria-hidden />
+                            <div className="min-w-0">
+                              <p className="text-xs font-semibold tracking-wide uppercase text-muted-foreground">
+                                State law reference
+                              </p>
+                              <p className="mt-1 text-xs font-mono leading-relaxed text-muted-foreground">
+                                {issue.stateLawReference}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
                 ))}
               </CardContent>
             </Card>
 
             <Card key="summary-card">
               <CardHeader>
-                <CardTitle className="font-heading">Summary</CardTitle>
+                <CardTitle className="font-heading">Executive summary</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-5">
                 <p className="text-sm leading-relaxed whitespace-pre-wrap">
                   <span>{report.summary}</span>
                 </p>
-              </CardContent>
-              <CardFooter className="flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:justify-between">
-                <div className="min-h-0">
-                  <p className="text-sm font-medium">Recommended actions</p>
-                  <ul className="text-muted-foreground mt-2 list-inside list-disc space-y-1 text-sm">
-                    {report.recommendedActions.map((a, i) => (
-                      <li key={`action-${i}`}>
-                        <span>{a}</span>
+
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-xl border border-border/60 bg-muted/20 p-4">
+                    <p className="text-xs font-semibold tracking-wide uppercase text-muted-foreground">
+                      Recommended actions (next steps)
+                    </p>
+                    <ul className="mt-3 space-y-2 text-sm">
+                      {report.recommendedActions.map((a, i) => (
+                        <li key={`action-${i}`} className="flex items-start gap-2">
+                          <CheckCircle2 className="mt-0.5 size-4 text-primary" aria-hidden />
+                          <span className="leading-relaxed">{a}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="rounded-xl border border-border/60 bg-card/40 p-4">
+                    <p className="text-xs font-semibold tracking-wide uppercase text-muted-foreground">
+                      Deliverables
+                    </p>
+                    <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 size-1.5 rounded-full bg-primary" aria-hidden />
+                        <span>Plain-English risk explanations and suggested clause fixes</span>
                       </li>
-                    ))}
-                  </ul>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 size-1.5 rounded-full bg-primary" aria-hidden />
+                        <span>State-aware references to review with counsel</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 size-1.5 rounded-full bg-primary" aria-hidden />
+                        <span>PDF report for sharing and record-keeping</span>
+                      </li>
+                    </ul>
+                    <div className="mt-4 flex flex-col gap-2 sm:flex-row">
+                      <Button
+                        type="button"
+                        className="w-full sm:w-auto"
+                        onClick={lockedPreview ? undefined : downloadReportPdf}
+                        disabled={lockedPreview || !pdfId}
+                      >
+                        {lockedPreview ? "Unlock full report (PDF included)" : "Download PDF report"}
+                      </Button>
+                      {lockedPreview ? (
+                        <Button
+                          type="button"
+                          variant="outline"
+                          className="w-full sm:w-auto"
+                          nativeButton={false}
+                          render={<Link href="/upgrade?redirectTo=/audit#redeem" />}
+                        >
+                          Unlock now (view all issues)
+                        </Button>
+                      ) : null}
+                    </div>
+
+                    {lockedPreview ? (
+                      <p className="mt-3 text-xs text-muted-foreground">
+                        You’re viewing a preview. Unlock to see all flagged issues and download the full PDF report.
+                      </p>
+                    ) : null}
+                  </div>
                 </div>
-                <div className="min-h-0 w-full sm:w-auto">
-                  <Button
-                    type="button"
-                    variant="secondary"
-                    className="w-full shrink-0 sm:w-auto"
-                    onClick={downloadReportPdf}
-                    disabled={!pdfId}
-                  >
-                    <span className="inline-flex items-center justify-center gap-2">
-                      <span className="inline-flex shrink-0">
-                        <CheckCircle2 className="size-4" aria-hidden />
-                      </span>
-                      <span>Download audit report PDF</span>
-                    </span>
-                  </Button>
-                </div>
-              </CardFooter>
+              </CardContent>
             </Card>
 
             <div key="disclaimer-alert" className="min-h-0">

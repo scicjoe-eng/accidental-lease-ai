@@ -57,14 +57,16 @@ function mapGumroadFailureMessage(apiMessage: string | undefined): string {
 /**
  * Verify a license key against your product. Requires env:
  * - `GUMROAD_ACCESS_TOKEN`
- * - `GUMROAD_PRODUCT_ID`
+ * - `GUMROAD_PRODUCT_PERMALINK` (recommended) OR `GUMROAD_PRODUCT_ID` (legacy name)
  */
 export async function verifyGumroadLicenseKey(
   licenseKey: string
 ): Promise<GumroadVerifyResult> {
   const token = process.env.GUMROAD_ACCESS_TOKEN?.trim()
-  const productId = process.env.GUMROAD_PRODUCT_ID?.trim()
-  if (!token || !productId) {
+  const productPermalink =
+    process.env.GUMROAD_PRODUCT_PERMALINK?.trim() ??
+    process.env.GUMROAD_PRODUCT_ID?.trim()
+  if (!token || !productPermalink) {
     return { ok: false, userMessage: ZH.config }
   }
 
@@ -74,7 +76,8 @@ export async function verifyGumroadLicenseKey(
   }
 
   const body = new URLSearchParams({
-    product_id: productId,
+    // Gumroad expects `product_permalink` for the verify endpoint.
+    product_permalink: productPermalink,
     license_key: key,
     access_token: token,
   })
@@ -114,14 +117,9 @@ export async function verifyGumroadLicenseKey(
     return { ok: false, userMessage: ZH.licenseInvalidOrProduct }
   }
 
-  const returnedProductId = json.purchase?.product_id
-  if (returnedProductId && returnedProductId !== productId) {
-    return { ok: false, userMessage: ZH.licenseInvalidOrProduct }
-  }
-
   return {
     ok: true,
-    productId,
+    productId: String(json.purchase?.product_id ?? productPermalink),
     purchaseId: json.purchase?.id,
   }
 }
@@ -129,4 +127,4 @@ export async function verifyGumroadLicenseKey(
 /** Gumroad checkout for AcciLease Pro (one-time; unlock via license redeem). */
 export const GUMROAD_PRO_CHECKOUT_URL =
   process.env.NEXT_PUBLIC_GUMROAD_CHECKOUT_URL ||
-  "https://8760505533632.gumroad.com/l/ipvqkqd"
+  "https://8760505533632.gumroad.com/l/wdhgav"

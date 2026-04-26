@@ -333,6 +333,14 @@ function fieldErrorClass(invalid: boolean) {
   return invalid ? "border-destructive aria-invalid:border-destructive" : ""
 }
 
+function FieldErrorText({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="mt-1 text-sm text-destructive" role="alert">
+      {children}
+    </p>
+  )
+}
+
 export function GenerateLeaseForm() {
   const abortRef = useRef<AbortController | null>(null)
   const defaultDates = useMemo(() => {
@@ -397,7 +405,7 @@ export function GenerateLeaseForm() {
       missing.push({ id: "deposit_amount", label: "Security deposit amount (or select No deposit)" })
     }
     return missing
-  }, [form, jurisdictionState, termType, depositMode])
+  }, [form])
 
   const selectedJurisdiction = useMemo(
     () => findJurisdictionByLabel(jurisdictionState ?? ""),
@@ -415,9 +423,7 @@ export function GenerateLeaseForm() {
   const [resultIsPro, setResultIsPro] = useState<boolean | null>(null)
 
   const resetDownload = useCallback(() => {
-    setDownloadUrl((u) => {
-      return null
-    })
+    setDownloadUrl(null)
   }, [])
 
   const cancelGeneration = useCallback(() => {
@@ -541,6 +547,38 @@ export function GenerateLeaseForm() {
         </Link>
       </div>
 
+      <div className="rounded-2xl border border-border/60 bg-card p-5 shadow-sm">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <div className="flex items-start gap-3">
+            <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary ring-1 ring-primary/25">
+              <span className="text-sm font-semibold">1</span>
+            </span>
+            <div className="min-w-0">
+              <p className="text-sm font-semibold">Enter details</p>
+              <p className="text-xs text-muted-foreground">Property, parties, term</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary ring-1 ring-primary/25">
+              <span className="text-sm font-semibold">2</span>
+            </span>
+            <div className="min-w-0">
+              <p className="text-sm font-semibold">Generate</p>
+              <p className="text-xs text-muted-foreground">Server-side draft + PDF</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary ring-1 ring-primary/25">
+              <span className="text-sm font-semibold">3</span>
+            </span>
+            <div className="min-w-0">
+              <p className="text-sm font-semibold">Download</p>
+              <p className="text-xs text-muted-foreground">Review & share with counsel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="hidden" aria-hidden />
 
       <Card>
@@ -612,9 +650,7 @@ export function GenerateLeaseForm() {
                   )}
                 />
                 {errors.jurisdiction_state ? (
-                  <p className="text-sm text-destructive" role="alert">
-                    {errors.jurisdiction_state.message}
-                  </p>
+                  <FieldErrorText>{errors.jurisdiction_state.message}</FieldErrorText>
                 ) : null}
               </Field>
 
@@ -674,9 +710,7 @@ export function GenerateLeaseForm() {
                   state from the address — use the state selector above.
                 </p>
                 {errors.premises_address ? (
-                  <p className="text-sm text-destructive" role="alert">
-                    {errors.premises_address.message}
-                  </p>
+                  <FieldErrorText>{errors.premises_address.message}</FieldErrorText>
                 ) : null}
               </Field>
 
@@ -691,9 +725,7 @@ export function GenerateLeaseForm() {
                     {...register("landlord_name")}
                   />
                   {errors.landlord_name ? (
-                    <p className="text-sm text-destructive" role="alert">
-                      {errors.landlord_name.message}
-                    </p>
+                    <FieldErrorText>{errors.landlord_name.message}</FieldErrorText>
                   ) : null}
                 </Field>
                 <Field>
@@ -716,9 +748,7 @@ export function GenerateLeaseForm() {
                     {...register("tenant_names")}
                   />
                   {errors.tenant_names ? (
-                    <p className="text-sm text-destructive" role="alert">
-                      {errors.tenant_names.message}
-                    </p>
+                    <FieldErrorText>{errors.tenant_names.message}</FieldErrorText>
                   ) : null}
                 </Field>
                 <Field>
@@ -757,9 +787,7 @@ export function GenerateLeaseForm() {
                     )}
                   />
                   {errors.term_type ? (
-                    <p className="text-sm text-destructive" role="alert">
-                      {errors.term_type.message}
-                    </p>
+                    <FieldErrorText>{errors.term_type.message}</FieldErrorText>
                   ) : null}
                 </Field>
               </div>
@@ -805,9 +833,7 @@ export function GenerateLeaseForm() {
                     )}
                   />
                   {errors.lease_start_date ? (
-                    <p className="text-sm text-destructive" role="alert">
-                      {errors.lease_start_date.message}
-                    </p>
+                    <FieldErrorText>{errors.lease_start_date.message}</FieldErrorText>
                   ) : null}
                 </Field>
 
@@ -852,9 +878,7 @@ export function GenerateLeaseForm() {
                     )}
                   />
                   {errors.lease_end_date ? (
-                    <p className="text-sm text-destructive" role="alert">
-                      {errors.lease_end_date.message}
-                    </p>
+                    <FieldErrorText>{errors.lease_end_date.message}</FieldErrorText>
                   ) : null}
                 </Field>
               </div>
@@ -871,9 +895,7 @@ export function GenerateLeaseForm() {
                     {...register("monthly_rent")}
                   />
                   {errors.monthly_rent ? (
-                    <p className="text-sm text-destructive" role="alert">
-                      {errors.monthly_rent.message}
-                    </p>
+                    <FieldErrorText>{errors.monthly_rent.message}</FieldErrorText>
                   ) : null}
                 </Field>
                 <Field>
@@ -1037,9 +1059,7 @@ export function GenerateLeaseForm() {
             ) : null}
 
             {error ? (
-              <p className="text-sm text-destructive" role="alert">
-                {error}
-              </p>
+              <FieldErrorText>{error}</FieldErrorText>
             ) : null}
 
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">

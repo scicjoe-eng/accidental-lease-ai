@@ -16,6 +16,8 @@ export type RunLeaseAuditActionResult =
       report: LeaseAuditReport
       pdfId?: string
       locked: boolean
+      totalIssues: number
+      totalRecommendedActions: number
       extractedTextLength: number
       truncated: boolean
     }
@@ -46,7 +48,7 @@ export async function runLeaseAuditAction(
 ): Promise<RunLeaseAuditActionResult> {
   try {
     await assertRateLimit({ bucket: "lease_audit", limit: 4, windowSeconds: 60 })
-  } catch (e) {
+  } catch {
     return { ok: false, error: "Too many requests. Please try again in a moment." }
   }
 
@@ -84,6 +86,8 @@ export async function runLeaseAuditAction(
   }
 
   try {
+    const totalIssues = result.report.issues.length
+    const totalRecommendedActions = result.report.recommendedActions.length
     const unlock = await getUnlockStatusFromCookie()
     const canUnlock = unlock.ok && unlock.canUse === true
 
@@ -92,6 +96,8 @@ export async function runLeaseAuditAction(
         ok: true,
         locked: true,
         report: buildAuditPreview(result.report),
+        totalIssues,
+        totalRecommendedActions,
         extractedTextLength: result.extractedTextLength,
         truncated: result.truncated,
       }
@@ -108,6 +114,8 @@ export async function runLeaseAuditAction(
         ok: true,
         locked: true,
         report: buildAuditPreview(result.report),
+        totalIssues,
+        totalRecommendedActions,
         extractedTextLength: result.extractedTextLength,
         truncated: result.truncated,
       }
@@ -118,6 +126,8 @@ export async function runLeaseAuditAction(
       locked: false,
       report: result.report,
       pdfId,
+      totalIssues,
+      totalRecommendedActions,
       extractedTextLength: result.extractedTextLength,
       truncated: result.truncated,
     }

@@ -1,9 +1,6 @@
 import type { Metadata } from "next"
-import { redirect } from "next/navigation"
 
 import { AuditLeaseClient } from "@/app/audit/audit-client"
-import { DashboardShell } from "@/components/dashboard/dashboard-shell"
-import { createClient } from "@/app/lib/supabase"
 
 export const metadata: Metadata = {
   title: "Audit lease PDF | AcciLease AI",
@@ -12,18 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default async function AuditPage() {
-  const supabase = await createClient()
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
-
-  if (!user) {
-    redirect("/login?redirectTo=/audit")
-  }
-
   return (
-    <DashboardShell>
+    <div className="mx-auto w-full max-w-[1400px] flex-1 px-4 py-10 sm:px-6">
       <AuditLeaseClient />
-    </DashboardShell>
+    </div>
   )
 }

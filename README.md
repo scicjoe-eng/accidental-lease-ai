@@ -6,8 +6,7 @@
 
 - **租约生成** - AI 辅助生成符合各州法律的租赁合同
 - **PDF 审计** - 上传租赁合同进行风险评估和合规检查
-- **用户系统** - 登录认证（基于 Supabase）
-- **订阅管理** - 免费版 vs Pro 版（Gumroad 支付）
+- **一次性解锁** - Gumroad 购买后通过 License Key 解锁 1 次完整报告 + PDF 下载
 - **PWA 支持** - 可作为离线应用使用
 - **双 AI 提供商** - 支持 DeepSeek 和 DashScope (Qwen)
 
@@ -19,7 +18,7 @@
 | 语言 | TypeScript |
 | 样式 | Tailwind CSS 4, class-variance-authority |
 | AI | @ai-sdk/openai, DeepSeek / DashScope (Qwen) |
-| 数据库/认证 | Supabase |
+| 数据库 | Supabase |
 | PDF | pdf-lib, pdf-parse, pdfjs-dist |
 | 表单 | react-hook-form, zod |
 | 支付 | Gumroad |
@@ -91,17 +90,19 @@ DASHSCOPE_API_KEY=your-dashscope-api-key
 ### Gumroad 配置
 
 ```env
-GUMROAD_PRODUCT_ID=ipvqkqd
-NEXT_PUBLIC_GUMROAD_CHECKOUT_URL=https://your-gumroad-url
+GUMROAD_ACCESS_TOKEN=your-gumroad-access-token
+# Gumroad 产品链接 `https://xxxx.gumroad.com/l/<permalink>` 的最后一段，例如 `ipvqkqd`
+GUMROAD_PRODUCT_PERMALINK=ipvqkqd
+NEXT_PUBLIC_GUMROAD_CHECKOUT_URL=https://xxxx.gumroad.com/l/ipvqkqd
 ```
 
 ## 数据库设置
 
 项目使用 Supabase 作为数据库。需要执行以下 SQL 脚本：
 
-- `script/sql/subscription_gumroad.sql` - 订阅相关表
+- `script/sql/license_redemptions.sql` - 一次性解锁（Gumroad License Key -> 10 分钟解锁窗口 -> 首次完整报告自动消耗）
 - `script/sql/state_laws_add_key_clauses.sql` - 州法律数据
-- `script/sql/increment_subscription_feature_usage.sql` - 使用量计数函数
+- `script/sql/subscription_gumroad.sql` - 旧版（登录/订阅）遗留脚本，当前一次性解锁流程不需要
 
 导入州法律数据：
 

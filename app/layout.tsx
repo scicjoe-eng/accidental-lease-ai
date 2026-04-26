@@ -1,21 +1,33 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, Playfair_Display, JetBrains_Mono } from "next/font/google";
+
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 import { Providers } from "@/components/providers";
 import { SiteFooter } from "@/components/site/site-footer";
-import { SiteHeader, type SiteHeaderUser } from "@/components/site/site-header";
+import { SiteHeader } from "@/components/site/site-header";
+import { WebVitalsReporter } from "@/components/web-vitals-reporter"
 
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dmSans = DM_Sans({
+  variable: "--font-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const playfair = Playfair_Display({
+  variable: "--font-heading",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 // Light neutral to match default light UI.
@@ -25,10 +37,23 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://accidental-lease-ai.com"),
   applicationName: "AcciLease AI",
   title: {
-    default: "AcciLease AI",
+    default: "AcciLease AI — Lease Generator + State Law Guide for Landlords",
     template: "%s | AcciLease AI",
   },
-  description: "AI-assisted lease tools for accidental landlords.",
+  description:
+    "AI-assisted lease generator, contract review, and landlord-tenant law guides for all 50 states + DC. Built for accidental landlords who want state-aware leases and fewer legal mistakes.",
+  keywords: [
+    "lease generator",
+    "lease agreement generator",
+    "rental agreement",
+    "lease analyzer",
+    "contract review",
+    "landlord tenant law",
+    "landlord tenant laws by state",
+    "accidental landlord",
+    "security deposit laws",
+    "eviction notice requirements",
+  ],
   alternates: {
     canonical: "https://accidental-lease-ai.com",
     languages: {
@@ -38,8 +63,9 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: "AcciLease AI",
-    description: "AI-assisted lease tools for accidental landlords.",
+    title: "AcciLease AI — Lease Generator + State Law Guide",
+    description:
+      "Generate and review leases with state-aware guidance. Browse landlord-tenant laws for all 50 states + DC.",
     url: "https://accidental-lease-ai.com",
     siteName: "AcciLease AI",
     type: "website",
@@ -54,8 +80,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AcciLease AI",
-    description: "AI-assisted lease tools for accidental landlords.",
+    title: "AcciLease AI — Lease Generator + State Law Guide",
+    description:
+      "Generate and review leases with state-aware guidance. Browse landlord-tenant laws for all 50 states + DC.",
     images: ["/og-image.png"],
   },
   appleWebApp: {
@@ -85,15 +112,31 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const headerUser: SiteHeaderUser | null = null
-
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${dmSans.variable} ${playfair.variable} ${jetbrainsMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <head>
+        {/* 结构化数据 - WebSite (helps sitelinks search box where applicable) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "AcciLease AI",
+              url: "https://accidental-lease-ai.com",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://accidental-lease-ai.com/landlord-tenant-laws?state={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+
         {/* 结构化数据 - Organization */}
         <script
           type="application/ld+json"
@@ -139,12 +182,15 @@ export default async function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <BreadcrumbSchema />
+        <WebVitalsReporter />
         <Providers>
           {/* Site marketing chrome (hidden on app-shell routes like /audit) */}
-          <SiteHeader user={headerUser} />
+          <SiteHeader />
           {children}
           <SiteFooter />
         </Providers>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

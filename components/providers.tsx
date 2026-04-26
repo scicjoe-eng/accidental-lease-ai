@@ -1,9 +1,15 @@
 "use client"
 
 import { ThemeProvider } from "next-themes"
+import dynamic from "next/dynamic"
 
-import { PwaInstallPrompt } from "@/components/pwa-install-prompt"
-import { Toaster } from "@/components/ui/sonner"
+const Toaster = dynamic(() => import("@/components/ui/sonner").then((m) => m.Toaster), {
+  ssr: false,
+})
+const PwaInstallPrompt = dynamic(
+  () => import("@/components/pwa-install-prompt").then((m) => m.PwaInstallPrompt),
+  { ssr: false }
+)
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (

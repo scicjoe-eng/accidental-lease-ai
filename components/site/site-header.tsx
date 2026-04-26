@@ -3,82 +3,33 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, Sparkles, X } from "lucide-react"
-import { useEffect, useMemo, useState } from "react"
+import { useMemo, useState } from "react"
 
-import { UserMenu } from "@/components/dashboard/user-menu"
 import { Button } from "@/components/ui/button"
-import { createBrowserClient } from "@/app/lib/supabase"
 import { cn } from "@/lib/utils"
-
-export type SiteHeaderUser = {
-  email: string
-  avatarUrl: string | null
-  initials: string
-}
 
 const CORE_NAV = [
   { href: "/features", label: "Features" },
   { href: "/blog", label: "Blog" },
+  { href: "/guides", label: "Guides" },
   { href: "/accidental-landlord-guide", label: "Guide" },
   { href: "/landlord-tenant-laws", label: "Laws" },
+  { href: "/legal", label: "Legal" },
 ] as const
 
 function isAppShellRoute(pathname: string) {
   // Pages that already render their own authenticated shell/navigation.
   return (
     pathname === "/dashboard" ||
-    pathname.startsWith("/dashboard/") ||
-    pathname === "/audit" ||
-    pathname.startsWith("/audit/") ||
-    pathname === "/generate" ||
-    pathname.startsWith("/generate/") ||
-    pathname === "/login" ||
-    pathname.startsWith("/login/") ||
-    pathname === "/signup" ||
-    pathname.startsWith("/signup/") ||
-    pathname === "/upgrade" ||
-    pathname.startsWith("/upgrade/")
+    pathname.startsWith("/dashboard/")
   )
 }
 
-export function SiteHeader({ user }: { user: SiteHeaderUser | null }) {
+export function SiteHeader() {
   const pathname = usePathname() ?? "/"
   const hidden = isAppShellRoute(pathname)
 
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [resolvedUser, setResolvedUser] = useState<SiteHeaderUser | null>(user)
-
-  useEffect(() => {
-    if (user) {
-      // already initialized with user — no need to setState again
-      return
-    }
-    let alive = true
-    const supabase = createBrowserClient()
-    supabase.auth
-      .getUser()
-      .then(({ data }) => {
-        if (!alive) return
-        const u = data.user
-        if (!u?.email) {
-          setResolvedUser(null)
-          return
-        }
-        const email = u.email
-        const avatarUrl = (u.user_metadata?.avatar_url as string | undefined) ?? null
-        const local = (email.split("@")[0] ?? email).replace(/[^a-zA-Z0-9]/g, "")
-        const initials =
-          local.length >= 2 ? local.slice(0, 2).toUpperCase() : email.slice(0, 2).toUpperCase()
-        setResolvedUser({ email, avatarUrl, initials })
-      })
-      .catch(() => {
-        if (!alive) return
-        setResolvedUser(null)
-      })
-    return () => {
-      alive = false
-    }
-  }, [user])
 
   const activeHref = useMemo(() => {
     for (const item of CORE_NAV) {
@@ -128,22 +79,13 @@ export function SiteHeader({ user }: { user: SiteHeaderUser | null }) {
         </div>
 
         <div className="flex items-center gap-2">
-          {resolvedUser ? (
-            <UserMenu
-              email={resolvedUser.email}
-              avatarUrl={resolvedUser.avatarUrl}
-              initials={resolvedUser.initials}
-            />
-          ) : (
-            <Button
-              variant="outline"
-              size="sm"
-              nativeButton={false}
-              render={<Link href="/login" />}
-            >
-              Login
-            </Button>
-          )}
+          <Button
+            size="sm"
+            nativeButton={false}
+            render={<Link href="/upgrade?redirectTo=/audit#redeem" />}
+          >
+            Upgrade
+          </Button>
 
           <Button
             variant="outline"

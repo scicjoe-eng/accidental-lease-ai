@@ -5,6 +5,15 @@ import Link from "next/link"
 import type { StateLawPage } from "@/app/data/states/types"
 import statesIndex from "@/app/data/states/index.json"
 
+function slugifyHeading(s: string): string {
+  return String(s ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "")
+}
+
 async function loadStatePage(stateSlug: string): Promise<StateLawPage | null> {
   try {
     const mod = (await import(`@/app/data/states/${stateSlug}.json`)) as {
@@ -81,9 +90,58 @@ export default function StateLandlordTenantLaws({
       statesIndex.find((s) => s.stateSlug === stateSlug)?.stateName ??
       stateSlug
 
+    const h2Sections = (page?.sections ?? []).filter((s) => s.level === "h2")
+    const toc = h2Sections.map((s) => ({
+      id: slugifyHeading(s.heading),
+      label: s.heading,
+    }))
+
+    const faqCandidates = h2Sections.slice(0, 5).map((s) => ({
+      q: `${stateName}: ${s.heading}`,
+      a: (s.body ?? []).join(" "),
+    }))
+
+    const canonical = `https://accidental-lease-ai.com/landlord-tenant-laws/states/${stateSlug}`
+
     return (
       <div className="container mx-auto px-4 py-8">
         <div className="mx-auto max-w-4xl">
+          {/* State TopicPage Schema (Article + lightweight FAQ) */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Article",
+                headline: page?.h1 ?? `${stateName} Landlord Tenant Law 2026`,
+                description:
+                  page?.metaDescription ??
+                  `${stateName} landlord tenant law 2026: security deposit limits, eviction notice requirements, tenant rights & more.`,
+                mainEntityOfPage: canonical,
+                about: [
+                  { "@type": "Thing", name: `${stateName} landlord tenant law` },
+                  { "@type": "Thing", name: `${stateName} security deposit rules` },
+                  { "@type": "Thing", name: `${stateName} eviction notice requirements` },
+                ],
+                publisher: {
+                  "@type": "Organization",
+                  name: "AcciLease AI",
+                  url: "https://accidental-lease-ai.com",
+                },
+                mainEntity: faqCandidates.length
+                  ? {
+                      "@type": "FAQPage",
+                      mainEntity: faqCandidates.map((x) => ({
+                        "@type": "Question",
+                        name: x.q,
+                        acceptedAnswer: { "@type": "Answer", text: x.a },
+                      })),
+                    }
+                  : undefined,
+              }),
+            }}
+          />
+
           <p className="text-muted-foreground text-xs font-medium tracking-wide uppercase">
             {stateName} landlord tenant law
           </p>
@@ -107,12 +165,28 @@ export default function StateLandlordTenantLaws({
             </Link>
           </div>
 
+          {toc.length ? (
+            <div className="mt-8 rounded-lg border border-border/60 bg-background/50 p-5">
+              <p className="text-sm font-semibold">On this page</p>
+              <ul className="mt-3 grid grid-cols-1 gap-2 text-sm sm:grid-cols-2">
+                {toc.map((t) => (
+                  <li key={t.id}>
+                    <a className="text-primary hover:underline" href={`#${t.id}`}>
+                      {t.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+
           <div className="prose dark:prose-invert mt-8 max-w-none">
             {(page?.sections ?? []).map((s, idx) => {
               if (s.level === "h2") {
+                const id = slugifyHeading(s.heading)
                 return (
                   <section key={`sec-${idx}-${s.heading}`}>
-                    <h2>{s.heading}</h2>
+                    <h2 id={id}>{s.heading}</h2>
                     {s.body.map((p, i) => (
                       <p key={`p-${idx}-${i}`}>{p}</p>
                     ))}

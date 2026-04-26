@@ -1,33 +1,7 @@
 import Link from "next/link"
-import { Metadata } from 'next';
+import { Metadata } from "next"
 
-// 模拟博客文章数据
-const blogPosts = [
-  {
-    slug: 'how-to-become-a-landlord',
-    title: 'How to Become a Landlord: A Step-by-Step Guide for Accidental Landlords',
-    excerpt: 'Learn the essential steps to become a successful landlord, from understanding legal requirements to managing your property effectively.',
-    date: '2024-01-15',
-    author: 'AcciLease AI Team',
-    category: 'Landlord Tips'
-  },
-  {
-    slug: 'understanding-lease-agreements',
-    title: 'Understanding Lease Agreements: Key Components Every Landlord Should Know',
-    excerpt: 'Discover the essential components of a legally compliant lease agreement and how to protect your rights as a landlord.',
-    date: '2024-01-10',
-    author: 'AcciLease AI Team',
-    category: 'Lease Agreements'
-  },
-  {
-    slug: 'state-specific-landlord-laws',
-    title: 'State-Specific Landlord Laws: What You Need to Know',
-    excerpt: 'Navigate the complex landscape of state-specific landlord-tenant laws to ensure compliance and protect your investment.',
-    date: '2024-01-05',
-    author: 'AcciLease AI Team',
-    category: 'Legal Guidance'
-  }
-];
+import { BLOG_POSTS } from "@/app/blog/posts"
 
 export const metadata: Metadata = {
   title: 'Blog - AcciLease AI',
@@ -76,7 +50,7 @@ export default function BlogPage() {
 
       <div className="max-w-4xl mx-auto">
         <div className="space-y-8">
-          {blogPosts.map((post) => (
+          {BLOG_POSTS.map((post) => (
             <div key={post.slug} className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <span className="text-sm text-gray-500 dark:text-gray-400 mb-2 md:mb-0">{post.date}</span>
@@ -92,12 +66,12 @@ export default function BlogPage() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">{post.excerpt}</p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-500 dark:text-gray-400">By {post.author}</span>
-                <a 
-                  href={`/blog/${post.slug}`} 
+                <Link
+                  href={`/blog/${post.slug}`}
                   className="text-indigo-600 dark:text-indigo-400 hover:underline"
                 >
                   Read more →
-                </a>
+                </Link>
               </div>
             </div>
           ))}
@@ -114,7 +88,7 @@ export default function BlogPage() {
             'name': 'AcciLease AI Blog',
             'description': 'Expert advice and resources for accidental landlords navigating the rental property landscape.',
             'url': 'https://accidental-lease-ai.com/blog',
-            'blogPost': blogPosts.map(post => ({
+            'blogPost': BLOG_POSTS.map(post => ({
               '@type': 'BlogPosting',
               'headline': post.title,
               'description': post.excerpt,
